@@ -9,8 +9,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "godot-vrm", "-e"],
-            //"args": ["--test"],
+            "args": ["--path", "../godot-vrm", "-e"],
             "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64"
         }
     ]
