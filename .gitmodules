@@ -13,3 +13,6 @@
 [submodule "groups_godot_modules"]
 	path = groups_godot_modules
 	url = https://github.com/V-Sekai/godot-modules-groups.git
+[submodule "hop-spin-dance"]
+	path = hop-spin-dance
+	url = https://github.com/V-Sekai/godot-hop-spin-dance.git
