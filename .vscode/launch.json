@@ -9,7 +9,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "../hop-skip-dance", "-e"],
+            "args": ["--path", "./hop-spin-dance", "-e"],
             "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64"
         }
     ]
