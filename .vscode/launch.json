@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "../godot-vrm", "-e", "--single-window"],
+            "args": ["--path", "../hop-spin-dance", "-e", "--single-window"],
             "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64"
         }
     ]
