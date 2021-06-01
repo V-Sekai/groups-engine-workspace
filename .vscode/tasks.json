@@ -6,10 +6,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons platform=linuxbsd werror=no -j16 bits=64 debug_symbols=yes deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
-            "problemMatcher": {
-                "base": "$gcc"
-            },
+            "command": "scons platform=windows werror=no -j16 bits=64 debug_symbols=yes deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
+            "problemMatcher": [],
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
