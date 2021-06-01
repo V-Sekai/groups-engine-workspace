@@ -6,7 +6,7 @@
     "configurations": [    
         {
             "name": "Launch",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": ["--path", "./hop-spin-dance", "-e", "--single-window"],
