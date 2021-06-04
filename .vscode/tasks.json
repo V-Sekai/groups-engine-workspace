@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons platform=linuxbsd -j16 bits=64 dev=no use_lld=yes use_mingw=yes use_llvm=yes use_thinlto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=linuxbsd -j16 bits=64 dev=yes use_lld=yes use_llvm=yes debug_symbols=yes deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
@@ -14,7 +14,9 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
-        }
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
     ]
 }
