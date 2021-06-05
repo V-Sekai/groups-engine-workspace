@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons platform=windows -j16 bits=64 dev=yes use_lld=yes use_mingw=yes use_llvm=yes dev=yes use_thinlto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=yes target=debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=linuxbsd -j`nproc` bits=64 dev=yes use_llvm=yes use_lld=yes dev=yes use_thinlto=yes deprecated=yes target=debug",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
@@ -17,7 +17,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "visualizerFile": "${workspaceFolder}/
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
         }
     ]
 }
