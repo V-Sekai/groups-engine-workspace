@@ -6,11 +6,12 @@
     "configurations": [    
         {
             "name": "Launch",
-            "type": "lldb",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": ["--path", "./hop-spin-dance", "-e", "--single-window"],
-            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm"
+            "program":  "${workspaceFolder}/godot/bin/godot.windows.tools.64.exe",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis"
         }
     ]
 }
