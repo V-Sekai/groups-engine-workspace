@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons platform=linuxbsd -j`nproc` bits=64 dev=yes use_llvm=yes use_lld=yes dev=yes use_thinlto=yes deprecated=yes target=debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=linuxbsd -j`nproc` bits=64 dev=yes use_llvm=yes use_lld=yes dev=yes deprecated=yes target=debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
