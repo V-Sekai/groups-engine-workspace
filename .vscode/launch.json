@@ -9,9 +9,9 @@
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "./hop-spin-dance", "-e", "--single-window"],
+            "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
             //"args": ["--test"],
-            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
+            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis"
         }
     ]
