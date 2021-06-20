@@ -13,7 +13,8 @@
             "cwd": "${workspaceFolder}",
             "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
             "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis"
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "build",
         }
     ]
 }
