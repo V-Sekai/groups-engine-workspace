@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons platform=linuxbsd use_static_cpp=no -j30 bits=64 sdeprecated=yes target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=linuxbsd dev=yes werror=no use_llvm=yes use_static_cpp=no -j30 bits=64 sdeprecated=yes target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
