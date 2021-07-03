@@ -10,7 +10,7 @@
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
-            "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.s",
+            "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "build",
         }
