@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "scons -j34 vsproj=yes platform=windows werror=no bits=64 deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons -j34 platform=windows werror=no use_lld=yes use_llvm=yes use_mingw=yes use_thinlto=yes use_asan=yes use_bsan=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' bits=64 deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
