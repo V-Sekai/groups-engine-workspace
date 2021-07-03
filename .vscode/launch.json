@@ -12,7 +12,7 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "MIMode": "gdb",
             "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
-            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "build",
         }
