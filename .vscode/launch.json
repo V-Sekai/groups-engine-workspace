@@ -6,13 +6,11 @@
     "configurations": [    
         {
             "name": "Launch",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "MIMode": "gdb",
             "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
-            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
+            "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.s",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "build",
         }
