@@ -2,11 +2,20 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
-    "tasks": [
+    "tasks": [            
         {
             "label": "build",
             "type": "shell",
             "command": "scons -j34 platform=windows werror=no use_lld=yes use_llvm=yes use_mingw=yes use_thinlto=yes use_asan=yes use_bsan=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' bits=64 deprecated=yes target=debug custom_modules=../groups_godot_modules",
+            "options": {
+                "cwd": "${workspaceFolder}/godot"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "scons -j34 platform=linuxbsd werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
