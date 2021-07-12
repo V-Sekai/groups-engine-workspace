@@ -11,10 +11,7 @@
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "build linuxbsd",
@@ -23,10 +20,11 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "group": "build",
-            "problemMatcher": [
-                "$gcc"
-            ]
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
         },
         {
             "label": "build linuxbsd no modules",
