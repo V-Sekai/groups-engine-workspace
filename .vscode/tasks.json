@@ -16,7 +16,7 @@
         {
             "label": "build linuxbsd",
             "type": "shell",
-            "command": "scons -j34 dev=yes platform=linuxbsd werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug custom_modules=../groups_godot_modules",
+            "command": "scons -j`nproc` dev=yes werror=no platform=linuxbsd werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
@@ -29,7 +29,7 @@
         {
             "label": "build linuxbsd no modules",
             "type": "shell",
-            "command": "scons -j34 platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug",
+            "command": "scons -j`nproc` platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
