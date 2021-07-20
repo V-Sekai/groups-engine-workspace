@@ -6,13 +6,14 @@
     "configurations": [    
         {
             "name": "Launch",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "hop-spin-dance", "-e", "--single-window"],
-            "program":  "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": ["--path", "../godot-hop-spin-dance", "-e", "--single-window"],
+            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "build windows",
+            "preLaunchTask": "build linuxbsd",
         }
     ]
 }
