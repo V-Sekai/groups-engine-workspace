@@ -27,6 +27,15 @@
             "problemMatcher": []
         },
         {
+            "label": "Update Repositories",
+            "type": "shell",
+            "command": "./update_repos.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "build linuxbsd no modules",
             "type": "shell",
             "command": "scons -j`nproc` platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug",
