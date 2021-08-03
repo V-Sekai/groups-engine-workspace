@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build windows",
+            "label": "Build Windows",
             "type": "shell",
             "command": "scons -j34 platform=windows werror=no use_lld=yes use_llvm=yes use_mingw=yes use_thinlto=yes use_asan=yes use_bsan=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' bits=64 deprecated=yes target=release_debug custom_modules=../groups_godot_modules",
             "options": {
@@ -14,7 +14,7 @@
             "group": "build"
         },
         {
-            "label": "build linuxbsd",
+            "label": "Build Linuxbsd",
             "type": "shell",
             "command": "scons -j`nproc` tests=no LINKFLAGS='-Wl,--build-id' werror=no platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
