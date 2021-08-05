@@ -5,13 +5,32 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
+            "name": "Launch Dance",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
-            "args": ["--path", "../dance", "-e"],
-            "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "args": [
+                "--path",
+                "../dance",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linuxbsd",
+        },
+        {
+            "name": "Launch Models",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "../models",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         }
