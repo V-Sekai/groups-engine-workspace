@@ -34,7 +34,6 @@
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         },
-
         {
             "name": "Launch Groups",
             "type": "cppdbg",
@@ -51,4 +50,3 @@
             "preLaunchTask": "Build Linuxbsd",
         }
     ]
-}
