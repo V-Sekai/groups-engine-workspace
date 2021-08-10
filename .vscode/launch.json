@@ -12,7 +12,7 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../dance",
+                "/home/ernestlee/Downloads/auto_arrange",
                 "-e"
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
