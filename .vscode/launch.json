@@ -12,7 +12,7 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../looking-glass/godot_demo/",
+                "../ik-test",
                 "-e"
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
