@@ -20,6 +20,19 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build OSX",
+            "type": "shell",
+            "command": "scons -j`nproc` tests=no werror=no use_thin_lto=yes platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules osxcross_sdk=darwin19",
+            "options": {
+                "cwd": "${workspaceFolder}/godot",
+                "env": {
+                    "OSXCROSS_ROOT": "/opt/osxcross"
+                }
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
