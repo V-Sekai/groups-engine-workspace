@@ -20,6 +20,21 @@
             "preLaunchTask": "Build Linuxbsd",
         },
         {
+            "name": "Launch Unidot",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "../unidot",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linuxbsd",
+        },
+        {
             "name": "Launch Models",
             "type": "cppdbg",
             "request": "launch",
