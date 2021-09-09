@@ -15,7 +15,7 @@
                 "../dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         },
@@ -30,7 +30,7 @@
                 "../unidot",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         },
@@ -45,7 +45,7 @@
                 "../models",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         },
@@ -60,7 +60,7 @@
                 "../ik-test",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         },
@@ -75,7 +75,7 @@
                 "../groups",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvms",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linuxbsd",
         }
