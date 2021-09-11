@@ -6,7 +6,7 @@
         {
             "label": "Build Windows",
             "type": "shell",
-            "command": "scons platform=windows -j32 tests=no LINKFLAGS='-Wl,--build-id' werror=no use_llvm=yes use_thin_lto=yes symbols=yes use_lld=yes use_mingw=yes bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=windows -j32 tests=yes werror=no use_llvm=yes use_thin_lto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' symbols=yes use_lld=yes use_mingw=yes bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
