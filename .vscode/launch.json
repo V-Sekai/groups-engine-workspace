@@ -50,6 +50,21 @@
             "preLaunchTask": "Build Linuxbsd",
         },
         {
+            "name": "Launch Godot_Skeleton_Modifier",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "/nexus/V-Sekai/Godot_GSOC_2020_Project",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linuxbsd",
+        },
+        {
             "name": "Launch IK Tests",
             "type": "cppdbg",
             "request": "launch",
