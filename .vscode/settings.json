@@ -98,7 +98,13 @@
         "resumable": "cpp",
         "codecvt": "cpp",
         "execution": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "any": "cpp",
+        "bit": "cpp",
+        "charconv": "cpp",
+        "clocale": "cpp",
+        "format": "cpp",
+        "stop_token": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true
