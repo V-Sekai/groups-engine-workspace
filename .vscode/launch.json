@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch dance",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -15,9 +15,9 @@
                 "../dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Unidot",

@@ -6,12 +6,15 @@
         {
             "label": "Build Windows",
             "type": "shell",
-            "command": "scons platform=windows -j32 tests=yes werror=no use_llvm=yes use_thin_lto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' symbols=yes use_lld=yes use_mingw=yes bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons platform=windows -j8 tests=no werror=no use_llvm=yes use_thin_lto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' symbols=yes use_lld=yes use_mingw=yes bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Build Linuxbsd",
@@ -20,10 +23,7 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": []
         },
         {
