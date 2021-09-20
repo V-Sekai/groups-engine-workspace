@@ -15,9 +15,9 @@
                 "../dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
+            "preLaunchTask": "Build Linuxbsd",
         },
         {
             "name": "Launch Unidot",
