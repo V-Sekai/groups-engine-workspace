@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch dance",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
