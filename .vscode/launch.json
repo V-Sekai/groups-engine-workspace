@@ -21,7 +21,7 @@
         },
         {
             "name": "Launch Unidot",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -30,13 +30,13 @@
                 "../unidot",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Models",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -45,13 +45,13 @@
                 "../models",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Godot_Skeleton_Modifier",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -60,28 +60,28 @@
                 "/nexus/V-Sekai/Godot_GSOC_2020_Project",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch IK Tests",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../ik-test",
+                "../ik-tests",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Groups",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -90,8 +90,8 @@
                 "../groups",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         }
     ]
