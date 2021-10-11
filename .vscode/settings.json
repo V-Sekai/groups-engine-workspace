@@ -107,5 +107,6 @@
         "stop_token": "cpp"
     },
     "python.formatting.provider": "black",
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "telemetry.enableCrashReporter": false
 }
