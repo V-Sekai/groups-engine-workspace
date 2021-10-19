@@ -13,11 +13,25 @@
             "args": [
                 "--path",
                 "../dance",
-                "-e"
+                "-e",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
+        },
+        {
+            "name": "Launch OpenVR Sample",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "../v-sekai-openvr-sample",
+                "-e",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
         },
         {
             "name": "Launch dance no modules",
