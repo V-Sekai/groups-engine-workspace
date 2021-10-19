@@ -3,8 +3,7 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [    
-    
+    "configurations": [
         {
             "name": "Launch dance",
             "type": "cppvsdbg",
@@ -16,10 +15,11 @@
                 "../dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
-        },        {
+        },
+        {
             "name": "Launch dance no modules",
             "type": "cppvsdbg",
             "request": "launch",
@@ -57,7 +57,7 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../models",
+                "../godot-models",
                 "-e"
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",

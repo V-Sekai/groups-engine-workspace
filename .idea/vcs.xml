@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/godot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/cmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/dem_bones" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/duckdb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/ewbik" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/lasso" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/qrcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/renik" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/sqlite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/tfd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/groups_godot_modules/vox" vcs="Git" />
+  </component>
+</project>
