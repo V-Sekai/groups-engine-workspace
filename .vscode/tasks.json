@@ -11,10 +11,7 @@
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Build Windows No Modules",
@@ -40,16 +37,16 @@
             "problemMatcher": []
         },
         {
-            "label": "Build OSX",
+            "label": "Build Macos",
             "type": "shell",
-            "command": "scons -j`nproc` tests=no werror=no use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules osxcross_sdk=darwin19",
+            "command": "scons -j8 tests=no werror=no use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot",
-                "env": {
-                    "OSXCROSS_ROOT": "/opt/osxcross"
-                }
             },
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": []
         },
         {

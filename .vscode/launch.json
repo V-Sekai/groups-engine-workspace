@@ -6,18 +6,12 @@
     "configurations": [
         {
             "name": "Launch dance",
-            "type": "cppvsdbg",
+            "type": "lldb-mi",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../dance",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
+            "arguments": "--path ../dance -e",
+            "target": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
+            "preLaunchTask": "Build Macos",
         },
         {
             "name": "Launch OpenVR Sample",
