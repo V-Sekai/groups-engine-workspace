@@ -19,6 +19,22 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Macos Tests",
+        },   
+        {
+            "name": "Launch voip",
+            "type": "lldb",
+            "request": "launch",
+            "cwd": "godot",
+            "args": [
+                "--path",
+                "../../godot_voip_experimental",
+                "-e",
+            ],
+            "program": "./godot/bin/godot.osx.opt.tools.64",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Macos Tests",
         },
         {
             "name": "Launch OpenVR Sample",
