@@ -21,10 +21,7 @@
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Build Linuxbsd",
@@ -41,13 +38,25 @@
             "type": "shell",
             "command": "scons -j8 tests=no werror=no use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
             "options": {
-                "cwd": "${workspaceFolder}/godot",
+                "cwd": "${workspaceFolder}/godot"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Macos Tests",
+            "type": "shell",
+            "command": "scons -j8 dev=yes tests=yes werror=yes use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
+            "options": {
+                "cwd": "${workspaceFolder}/godot"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "Update Repositories",

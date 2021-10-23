@@ -3,15 +3,22 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [        
         {
             "name": "Launch dance",
-            "type": "lldb-mi",
+            "type": "lldb",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "arguments": "--path ../dance -e",
-            "target": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
-            "preLaunchTask": "Build Macos",
+            "cwd": "godot",
+            "args": [
+                "--path",
+                "../../dance",
+                "-e",
+            ],
+            "program": "./godot/bin/godot.osx.opt.tools.64",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Macos Tests",
         },
         {
             "name": "Launch OpenVR Sample",
