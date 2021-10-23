@@ -6,36 +6,20 @@
     "configurations": [        
         {
             "name": "Launch dance",
-            "type": "lldb",
+            "type": "cppvsdbg",
             "request": "launch",
-            "cwd": "godot",
+            "cwd": "${workspaceFolder}",
             "args": [
                 "--path",
-                "../../dance",
+                "../dance",
                 "-e",
             ],
-            "program": "./godot/bin/godot.osx.opt.tools.64",
+            "program": "./godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "stopAtEntry": false,
             "externalConsole": false,
-            "preLaunchTask": "Build Macos Tests",
-        },   
-        {
-            "name": "Launch voip",
-            "type": "lldb",
-            "request": "launch",
-            "cwd": "godot",
-            "args": [
-                "--path",
-                "../../godot_voip_experimental",
-                "-e",
-            ],
-            "program": "./godot/bin/godot.osx.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Macos Tests",
-        },
+            "preLaunchTask": "Build Windows",
+        }
         {
             "name": "Launch OpenVR Sample",
             "type": "cppvsdbg",
