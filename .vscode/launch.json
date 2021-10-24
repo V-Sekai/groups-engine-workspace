@@ -45,7 +45,7 @@
                 "../dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows No Modules",
         },
