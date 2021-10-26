@@ -1,9 +1,6 @@
 [submodule "merge_scripts"]
 	path = merge_scripts
 	url = https://github.com/V-Sekai/groups_merge_script.git
-[submodule "groups_project"]
-	path = groups_project
-	url = git@gitlab.com:SaracenOne/groups.git
 [submodule "https://github.com/V-Sekai/godot"]
 	path = https://github.com/V-Sekai/godot
 	url = godot
