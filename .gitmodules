@@ -10,3 +10,6 @@
 [submodule "protongraph"]
 	path = protongraph
 	url = https://github.com/fire/protongraph.git
+[submodule "pipelines"]
+	path = pipelines
+	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
