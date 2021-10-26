@@ -1,6 +1,6 @@
 cd godot
 git fetch
-git checkout groups -f
+git checkout godot-3.4 -f
 git fetch
-git reset --hard origin/groups
+git reset --hard origin/godot-3.4
 cd -
