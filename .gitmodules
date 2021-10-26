@@ -7,3 +7,6 @@
 [submodule "godot"]
 	path = godot
 	url = https://github.com/V-Sekai/godot
+[submodule "protongraph"]
+	path = protongraph
+	url = https://github.com/fire/protongraph.git
