@@ -19,6 +19,23 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd",
+        },   
+        {
+            "name": "Launch Concept Graph",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path",
+                "../concept_graph",
+                "-e",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Linuxbsd",
+            "miDebuggerPath": "/usr/bin/gdb"
         },
         {
             "name": "Launch OpenVR Sample",
