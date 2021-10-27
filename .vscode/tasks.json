@@ -24,6 +24,18 @@
             "group": "build"
         },
         {
+            "label": "Rebase upstream Godot",
+            "type": "shell",
+            "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/merge"
+            },
+            "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        },
+        {
             "label": "Update repos.sh",
             "type": "shell",
             "command": "./update_repos.sh",
@@ -39,7 +51,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "dependsOn": ["Update repos.sh"],
+            "dependsOn": [
+                "Update repos.sh"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
