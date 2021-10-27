@@ -26,7 +26,7 @@
         {
             "label": "Rebase upstream Godot",
             "type": "shell",
-            "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh",
+            "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh && cd .. && ./update_repos.sh",
             "options": {
                 "cwd": "${workspaceFolder}/merge"
             },
