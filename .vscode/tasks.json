@@ -59,8 +59,9 @@
         {
             "label": "Build Linuxbsd",
             "type": "shell",
-            "command": "scons -j`nproc` tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
+            "command": "scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
             "options": {
+                "env": {"NINJA_DISABLE_AUTO_RUN": "false"},
                 "cwd": "${workspaceFolder}/godot"
             },
             "dependsOn": [
@@ -106,7 +107,7 @@
         {
             "label": "Build Linuxbsd no modules",
             "type": "shell",
-            "command": "scons -j`nproc` platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug",
+            "command": "scons -j`nproc` use_ninja=yes platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
