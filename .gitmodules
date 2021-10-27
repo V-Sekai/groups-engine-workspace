@@ -7,3 +7,6 @@
 [submodule "groups_godot_modules"]
 	path = groups_godot_modules
 	url = https://github.com/V-Sekai/godot-modules-groups.git
+[submodule "merge"]
+	path = merge
+	url = https://github.com/V-Sekai/groups_merge_script.git
