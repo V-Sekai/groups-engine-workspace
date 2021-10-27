@@ -14,7 +14,7 @@
                 "../dance",
                 "-e",
             ],
-            "program": "./godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "stopAtEntry": false,
             "externalConsole": false,
