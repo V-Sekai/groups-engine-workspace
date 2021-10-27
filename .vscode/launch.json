@@ -6,7 +6,7 @@
     "configurations": [        
         {
             "name": "Launch dance",
-            "type": "lldb-mi",
+            "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": [
