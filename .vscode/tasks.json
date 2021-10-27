@@ -36,6 +36,18 @@
             }
         },
         {
+            "label": "Abort rebase",
+            "type": "shell",
+            "command": "git checkout -f merge-script-4.x",
+            "options": {
+                "cwd": "${workspaceFolder}/merge"
+            },
+            "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        },
+        {
             "label": "Update repos.sh",
             "type": "shell",
             "command": "./update_repos.sh",
@@ -92,7 +104,7 @@
             "problemMatcher": []
         },
         {
-            "label": "build linuxbsd no modules",
+            "label": "Build Linuxbsd no modules",
             "type": "shell",
             "command": "scons -j`nproc` platform=linuxbsd dev=yes werror=no use_lld=yes use_llvm=yes use_mingw=yes use_static_cpp=no use_asan=yes use_bsan=yes bits=64 deprecated=yes target=debug",
             "options": {
