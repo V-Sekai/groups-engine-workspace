@@ -10,3 +10,6 @@
 [submodule "merge"]
 	path = merge
 	url = https://github.com/V-Sekai/groups_merge_script.git
+[submodule "groups"]
+	path = groups
+	url = git@gitlab.com:SaracenOne/groups.git
