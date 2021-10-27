@@ -59,11 +59,13 @@
         {
             "label": "Build Linuxbsd",
             "type": "shell",
-            "command": "(ls ${workspaceFolder}/godot/build.ninja && scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules) || ninja",
+            "command": "(ls ${workspaceFolder}/godot/build.ninja && ninja) || scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "dependsOn": ["Update repos.sh"],
+            "dependsOn": [
+                "Update repos.sh"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
