@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [        
         {
-            "name": "Launch dance",
+            "name": "Launch Dance",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -19,7 +19,23 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd",
-        },   
+        },          
+        {
+            "name": "Launch Groups",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path",
+                "${workspaceFolder}/groups",
+                "-e",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Linuxbsd",
+        }, 
         {
             "name": "Launch Concept Graph",
             "type": "cppdbg",
