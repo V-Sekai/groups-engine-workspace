@@ -21,7 +21,7 @@
             "preLaunchTask": "Build Linuxbsd",
         },         
         {
-            "name": "Launch Dance no cvs checkout",
+            "name": "Launch Dance no git checkout",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -30,7 +30,7 @@
                 "../dance",
                 "-e",
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "stopAtEntry": false,
             "externalConsole": false,
@@ -82,23 +82,6 @@
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd",
         }, 
-        {
-            "name": "Launch Concept Graph",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "../concept_graph",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd",
-            "miDebuggerPath": "/usr/bin/gdb"
-        },
         {
             "name": "Launch OpenVR Sample",
             "type": "cppdbg",
@@ -211,6 +194,20 @@
                 "--path",
                 "../groups",
                 "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Windows",
+        },
+        {
+            "name": "Launch Groups game",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "../groups",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
