@@ -65,23 +65,7 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd without checkout and without modules"
-        },          
-        {
-            "name": "Launch Groups",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "${workspaceFolder}/groups",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd",
-        }, 
+        },      
         {
             "name": "Launch OpenVR Sample",
             "type": "cppdbg",
@@ -186,31 +170,31 @@
         },
         {
             "name": "Launch Groups",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../groups",
+                "groups",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
+            "preLaunchTask": "Build Linuxbsd",
         },
         {
             "name": "Launch Groups game",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "../groups",
+                "groups",
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
+            "preLaunchTask": "Build Linuxbsd",
         }
     ]
