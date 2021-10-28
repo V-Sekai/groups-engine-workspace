@@ -79,10 +79,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Build Macos",
@@ -116,13 +113,26 @@
             "problemMatcher": []
         },
         {
+            "label": "Build doctool on branch",
+            "type": "shell",
+            "command": "./bin/godot.linuxbsd.opt.tools.64.llvm --doctool",
+            "options": {
+                "cwd": "${workspaceFolder}/godot"
+            },
+            "dependsOn": ["Build Linuxbsd without checkout and without modules"],
+            "problemMatcher": []
+        },
+        {
             "label": "Build Linuxbsd without checkout and without modules",
             "type": "shell",
             "command": "(ls ${workspaceFolder}/godot/build.ninja && ninja) || scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": [
                 "$gcc"
             ]

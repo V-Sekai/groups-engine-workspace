@@ -98,6 +98,19 @@
             "preLaunchTask": "Build Windows No Modules",
         },
         {
+            "name": "Launch dance game no modules no build",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "../dance",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis"
+        },
+        {
             "name": "Launch Unidot",
             "type": "cppvsdbg",
             "request": "launch",
