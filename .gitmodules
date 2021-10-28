@@ -13,3 +13,6 @@
 [submodule "groups"]
 	path = groups
 	url = git@gitlab.com:SaracenOne/groups.git
+[submodule "dance"]
+	path = dance
+	url = git@github.com:V-Sekai/godot-hop-dance.git
