@@ -19,9 +19,25 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd",
-        },              
+        },         
         {
-            "name": "Launch Dance Game",
+            "name": "Launch Dance no cvs checkout",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path",
+                "../dance",
+                "-e",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Linuxbsd without checkout and without modules"
+        },                  
+        {
+            "name": "Launch Dance game",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -34,6 +50,21 @@
             "stopAtEntry": false,
             "externalConsole": false,
             "preLaunchTask": "Build Linuxbsd",
+        },             
+        {
+            "name": "Launch Dance game no git checkout",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path",
+                "../dance",
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "Build Linuxbsd without checkout and without modules"
         },          
         {
             "name": "Launch Groups",

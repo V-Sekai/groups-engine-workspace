@@ -119,7 +119,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "dependsOn": ["Build Linuxbsd without checkout and without modules"],
+            "dependsOn": [
+                "Build Linuxbsd without checkout and without modules"
+            ],
             "problemMatcher": []
         },
         {
