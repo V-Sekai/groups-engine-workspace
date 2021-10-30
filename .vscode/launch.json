@@ -179,9 +179,9 @@
                 "groups",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Groups game",
@@ -195,7 +195,7 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Groups debug editor without checkout",

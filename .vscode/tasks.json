@@ -11,7 +11,10 @@
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Build Windows No Modules",
@@ -131,10 +134,7 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
