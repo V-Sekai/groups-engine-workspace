@@ -59,7 +59,8 @@
         {
             "label": "Build Linuxbsd",
             "type": "shell",
-            "command": "scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
+            // Deletes the build folder before building
+            "command": "rm -rf bin && scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
