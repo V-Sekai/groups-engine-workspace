@@ -6,7 +6,7 @@
         {
             "label": "Build Windows",
             "type": "shell",
-            "command": "scons -j30 no_editor_splash=yes dev=yes werror=no tests=no platform=windows use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
+            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j14 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
@@ -59,6 +59,7 @@
         {
             "label": "Build Linuxbsd",
             "type": "shell",
+            // Deletes the build folder before building
             "command": "rm -rf bin && scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
