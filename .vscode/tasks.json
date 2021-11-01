@@ -59,15 +59,17 @@
         {
             "label": "Build Linuxbsd",
             "type": "shell",
-            // Deletes the build folder before building
-            "command": "rm -rf bin && scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
+            "command": "rm -rf bin && scons -j`nproc` tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules && ninja",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
             "dependsOn": [
                 "Update repos.sh"
             ],
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": []
         },
         {
@@ -132,10 +134,7 @@
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
