@@ -6,17 +6,7 @@
         {
             "label": "Build Windows",
             "type": "shell",
-            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j14 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "problemMatcher": [],
-            "group": "build"
-        },
-        {
-            "label": "Build Windows No Modules",
-            "type": "shell",
-            "command": "scons platform=windows -j14 tests=no werror=no use_llvm=yes use_thin_lto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' symbols=yes use_lld=yes use_mingw=yes bits=64 deprecated=no target=debug",
+            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
@@ -45,6 +35,10 @@
             "problemMatcher": [],
             "runOptions": {
                 "instanceLimit": 1
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
         {
@@ -55,56 +49,6 @@
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
-        },
-        {
-            "label": "Build Linuxbsd",
-            "type": "shell",
-            "command": "rm -rf bin && scons -j`nproc` tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "dependsOn": [
-                "Update repos.sh"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "Build Linuxbsd debug without checkout",
-            "type": "shell",
-            "command": "scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=debug custom_modules=../groups_godot_modules && ninja",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build"
-        },
-        {
-            "label": "Build Macos",
-            "type": "shell",
-            "command": "scons -j8 tests=no werror=no use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
-            "label": "Build Macos Tests",
-            "type": "shell",
-            "command": "scons -j8 dev=yes tests=yes werror=yes use_thin_lto=no platform=osx symbols=yes use_mingw=no bits=64 deprecated=no target=release_debug custom_modules=../groups_godot_modules",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "group": "build",
-            "problemMatcher": [
-                "$gcc"
-            ]
         },
         {
             "label": "Update Repositories",
@@ -126,18 +70,6 @@
                 "Build Linuxbsd without checkout and without modules"
             ],
             "problemMatcher": []
-        },
-        {
-            "label": "Build Linuxbsd without checkout and without modules",
-            "type": "shell",
-            "command": "scons -j`nproc` use_ninja=yes tests=no LINKFLAGS='-Wl,--build-id' werror=yes use_llvm=yes use_thin_lto=yes platform=linuxbsd symbols=yes use_lld=yes use_llvm=yes use_mingw=no bits=64 deprecated=no target=release_debug && ninja",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "group": "build",
-            "problemMatcher": [
-                "$gcc"
-            ]
         }
     ]
 }

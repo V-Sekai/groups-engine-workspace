@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch Dance",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": [
@@ -14,15 +14,15 @@
                 "dance",
                 "-e",
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "stopAtEntry": false,
             "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd",
-        },         
+            "preLaunchTask": "Build Windows",
+        },
         {
             "name": "Launch Dance no git checkout",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "args": [
@@ -30,56 +30,12 @@
                 "dance",
                 "-e",
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "stopAtEntry": false,
             "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd without checkout and without modules"
-        },                  
-        {
-            "name": "Launch Dance game",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "dance",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd",
-        },             
-        {
-            "name": "Launch Dance game no git checkout",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "dance",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Linuxbsd without checkout and without modules"
-        },      
-        {
-            "name": "Launch OpenVR Sample",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../v-sekai-openvr-sample",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-        },
+            "preLaunchTask": "Build Windows without checkout and without modules"
+        },                 
         {
             "name": "Launch dance no modules",
             "type": "cppvsdbg",
@@ -91,67 +47,9 @@
                 "dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows No Modules",
-        },
-        {
-            "name": "Launch dance game no modules no build",
-            "type": "cppdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "dance",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis"
-        },
-        {
-            "name": "Launch Unidot",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../unidot",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
-        },
-        {
-            "name": "Launch Models",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../godot-models",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
-        },
-        {
-            "name": "Launch Godot_Skeleton_Modifier",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../Godot_GSOC_2020_Project",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch IK Tests",
@@ -181,11 +79,11 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Groups game",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -195,11 +93,11 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd",
+            "preLaunchTask": "Build Windows",
         },
         {
             "name": "Launch Groups debug editor without checkout",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -210,7 +108,7 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linuxbsd debug without checkout",
+            "preLaunchTask": "Build Windows debug without checkout",
         }
     ],
 }
