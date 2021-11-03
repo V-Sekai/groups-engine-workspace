@@ -16,3 +16,6 @@
 [submodule "dance"]
 	path = dance
 	url = git@github.com:V-Sekai/godot-hop-dance.git
+[submodule "git@github.com:V-Sekai/V-Sekai-Blender-tools.git"]
+	path = git@github.com:V-Sekai/V-Sekai-Blender-tools.git
+	url = tools
