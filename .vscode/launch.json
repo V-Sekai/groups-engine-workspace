@@ -9,7 +9,6 @@
             "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "args": ["--path", "./groups_project", "-e"],
             "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
             "preLaunchTask": "build",
         }
