@@ -1,76 +1,75 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build Windows",
-            "type": "shell",
-            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "Rebase upstream Godot",
-            "type": "shell",
-            "command": "git checkout -f merge-script-4.x && dos2unix update_repos.sh update_godot_v_sekai.sh && bash update_godot_v_sekai.sh && cd .. && dos2unix update_repos.sh && bash update_repos.sh",
-            "options": {
-                "cwd": "${workspaceFolder}/merge"
-            },
-            "problemMatcher": [],
-            "runOptions": {
-                "instanceLimit": 1
-            }
-        },
-        {
-            "label": "Abort rebase",
-            "type": "shell",
-            "command": "git checkout -f merge-script-4.x",
-            "options": {
-                "cwd": "${workspaceFolder}/merge"
-            },
-            "problemMatcher": [],
-            "runOptions": {
-                "instanceLimit": 1
-            },
-            "group": "build"
-        },
-        {
-            "label": "Update repos.sh",
-            "type": "shell",
-            "command": "dos2unix update_repos.sh && bash update_repos.sh",
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": []
-        },
-        {
-            "label": "Build Windows without checkout and without modules",
-            "type": "shell",
-            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "problemMatcher": [],
-            "group": "build"
-        },
-        {
-            "label": "Build doctool on branch",
-            "type": "shell",
-            "command": "./bin/godot.windows.opt.tools.64.exe --doctool",
-            "options": {
-                "cwd": "${workspaceFolder}/godot"
-            },
-            "dependsOn": [
-                "Build Windows without checkout and without modules"
-            ],
-            "problemMatcher": []
-        }
-    ]
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Windows",
+      "type": "shell",
+      "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes custom_modules=../groups_godot_modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "dependsOn": ["Update repos.sh"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rebase upstream Godot",
+      "type": "shell",
+      "command": "git checkout -f merge-script-4.x && dos2unix update_repos.sh update_godot_v_sekai.sh && bash update_godot_v_sekai.sh && cd .. && dos2unix update_repos.sh && bash update_repos.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/merge"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Abort rebase",
+      "type": "shell",
+      "command": "git checkout -f merge-script-4.x",
+      "options": {
+        "cwd": "${workspaceFolder}/merge"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "group": "build"
+    },
+    {
+      "label": "Update repos.sh",
+      "type": "shell",
+      "command": "(dos2unix update_repos.sh) -and (bash update_repos.sh)",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Windows without checkout and without modules",
+      "type": "shell",
+      "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Build doctool on branch",
+      "type": "shell",
+      "command": "./bin/godot.windows.opt.tools.64.exe --doctool",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "dependsOn": ["Build Windows without checkout and without modules"],
+      "problemMatcher": []
+    }
+  ]
 }
