@@ -5,70 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Dance",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "dance",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Windows",
-        },
-        {
-            "name": "Launch Dance no git checkout",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "args": [
-                "--path",
-                "dance",
-                "-e",
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "preLaunchTask": "Build Windows without checkout and without modules"
-        },                 
-        {
-            "name": "Launch dance no modules",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "dance",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows No Modules",
-        },
-        {
-            "name": "Launch IK Tests",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "../ik-tests",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
-        },
-        {
             "name": "Launch Groups",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
@@ -77,7 +15,7 @@
                 "groups",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
         },
@@ -91,24 +29,9 @@
                 "--path",
                 "groups",
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
         },
-        {
-            "name": "Launch Groups debug editor without checkout",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "groups",
-                "-e"
-            ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows debug without checkout",
-        }
     ],
 }

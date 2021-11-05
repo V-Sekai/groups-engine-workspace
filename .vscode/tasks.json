@@ -11,12 +11,15 @@
                 "cwd": "${workspaceFolder}/godot"
             },
             "problemMatcher": [],
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Rebase upstream Godot",
             "type": "shell",
-            "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh && cd .. && ./update_repos.sh",
+            "command": "git checkout -f merge-script-4.x && dos2unix update_repos.sh update_godot_v_sekai.sh && bash update_godot_v_sekai.sh && cd .. && dos2unix update_repos.sh && bash update_repos.sh",
             "options": {
                 "cwd": "${workspaceFolder}/merge"
             },
@@ -36,38 +39,36 @@
             "runOptions": {
                 "instanceLimit": 1
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "label": "Update repos.sh",
             "type": "shell",
-            "command": "./update_repos.sh",
+            "command": "dos2unix update_repos.sh && bash update_repos.sh",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
         },
         {
-            "label": "Update Repositories",
+            "label": "Build Windows without checkout and without modules",
             "type": "shell",
-            "command": "./update_repos.sh",
+            "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes",
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/godot"
             },
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": "build"
         },
         {
             "label": "Build doctool on branch",
             "type": "shell",
-            "command": "./bin/godot.linuxbsd.opt.tools.64.llvm --doctool",
+            "command": "./bin/godot.windows.opt.tools.64.exe --doctool",
             "options": {
                 "cwd": "${workspaceFolder}/godot"
             },
             "dependsOn": [
-                "Build Linuxbsd without checkout and without modules"
+                "Build Windows without checkout and without modules"
             ],
             "problemMatcher": []
         }
