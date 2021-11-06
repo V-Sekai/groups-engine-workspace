@@ -22,7 +22,7 @@
     {
       "label": "Build Web",
       "type": "shell",
-      "command": "scons no_editor_splash=yes platform=javascript -j34 target=release_debug tool=yes custom_modules=../groups_godot_modules",
+      "command": "scons platform=javascript -j34 target=release_debug tool=yes custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
