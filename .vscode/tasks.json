@@ -26,9 +26,6 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "dependsOn": [
-        "Update repos.sh"
-      ],
       "problemMatcher": ["$gcc"],
     },
     {
