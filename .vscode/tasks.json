@@ -10,10 +10,9 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "dependsOn": [
-        "Update repos.sh"
+      "problemMatcher": [
+        "$gcc"
       ],
-      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -26,7 +25,9 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": ["$gcc"],
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Rebase upstream Godot",
