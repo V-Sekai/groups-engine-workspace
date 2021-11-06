@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build Windows",
             "type": "shell",
             "command": "scons platform=windows -j34 bits=64 use_lld=yes use_mingw=yes use_llvm=yes use_thinlto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=yes target=release_debug",
             "problemMatcher": {
@@ -17,7 +17,28 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn": ["Update repos.sh"],
+            "dependsOn": [
+                "Update repos.sh",
+                "Build Javascript"
+            ]
+        },
+        {
+            "label": "Build Javascript",
+            "type": "shell",
+            "command": "scons platform=javascript -j34 bits=64 use_lld=yes use_mingw=yes use_llvm=yes use_thinlto=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=yes target=release_debug",
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/godot"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "Update repos.sh"
+            ]
         },
         {
             "label": "Update repos.sh",
