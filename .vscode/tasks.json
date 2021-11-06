@@ -10,12 +10,26 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "dependsOn": ["Update repos.sh"],
-      "problemMatcher": [],
+      "dependsOn": [
+        "Update repos.sh"
+      ],
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Build Web",
+      "type": "shell",
+      "command": "scons no_editor_splash=yes platform=javascript -j34 target=release_debug tool=yes custom_modules=../groups_godot_modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "dependsOn": [
+        "Update repos.sh"
+      ],
+      "problemMatcher": ["$gcc"],
     },
     {
       "label": "Rebase upstream Godot",
@@ -68,7 +82,9 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "dependsOn": ["Build Windows without checkout and without modules"],
+      "dependsOn": [
+        "Build Windows without checkout and without modules"
+      ],
       "problemMatcher": []
     }
   ]
