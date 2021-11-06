@@ -22,3 +22,6 @@
 [submodule "dcc_tools_blender"]
 	path = dcc_tools_blender
 	url = git@github.com:V-Sekai/V-Sekai-Blender-tools.git
+[submodule "proposals"]
+	path = proposals
+	url = https://github.com/V-Sekai/v-sekai-proposals.git
