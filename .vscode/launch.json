@@ -5,14 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Groups",
+            "name": "Launch Game Editor",
             "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "groups",
+                "chibi_create",
                 "-e"
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
@@ -20,14 +20,14 @@
             "preLaunchTask": "Build Windows",
         },
         {
-            "name": "Launch Groups game",
+            "name": "Launch Game",
             "type": "cppvsdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "groups",
+                "chibi_create",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
