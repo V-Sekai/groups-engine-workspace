@@ -4,15 +4,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build Windows",
+      "label": "Build Linux",
       "type": "shell",
-      "command": "scons no_editor_splash=yes werror=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "command": "scons werror=no -j34 platform=linuxbsd use_llvm=yes use_lld=yes tests=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -32,7 +30,7 @@
     {
       "label": "Rebase upstream Godot",
       "type": "shell",
-      "command": "git checkout -f merge-script-4.x && dos2unix update_repos.sh update_godot_v_sekai.sh && bash update_godot_v_sekai.sh && cd .. && dos2unix update_repos.sh && bash update_repos.sh",
+      "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh && ./update_repos.sh",
       "options": {
         "cwd": "${workspaceFolder}/merge"
       },
@@ -57,7 +55,7 @@
     {
       "label": "Update repos.sh",
       "type": "shell",
-      "command": "(dos2unix update_repos.sh) -and (bash update_repos.sh)",
+      "command": "./update_repos.sh",
       "options": {
         "cwd": "${workspaceFolder}"
       },
