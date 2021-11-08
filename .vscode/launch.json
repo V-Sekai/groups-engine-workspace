@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Game Editor",
+            "name": "Launch editor",
             "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -20,7 +20,7 @@
             "preLaunchTask": "Build Linux",
         },
         {
-            "name": "Launch Game",
+            "name": "Launch game",
             "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -29,6 +29,16 @@
                 "--path",
                 "chibi_create",
             ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linux",
+        },
+        {
+            "name": "Launch manager",
+            "type": "lldb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Linux",
