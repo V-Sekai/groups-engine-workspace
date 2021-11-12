@@ -16,7 +16,8 @@
         "isDefault": true
       },
       "dependsOn": [
-        "Update repos.sh"
+        "Update repos.sh",
+        "Build Web"
       ]
     },
     {
@@ -31,11 +32,14 @@
         "kind": "build",
         "isDefault": true
       },
+      "dependsOn": [
+        "Build Web"
+      ]
     },
     {
       "label": "Build Web",
       "type": "shell",
-      "command": "scons platform=javascript -j34 target=release_debug tool=yes custom_modules=../groups_godot_modules",
+      "command": "scons werror=yes -j34 platform=javascript use_llvm=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },

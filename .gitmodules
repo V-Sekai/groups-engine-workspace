@@ -28,3 +28,6 @@
 [submodule "launcher"]
 	path = launcher
 	url = https://github.com/fire/V-Sekai-launcher.git
+[submodule "godot-launcher"]
+	path = godot-launcher
+	url = https://github.com/V-Sekai/godot
