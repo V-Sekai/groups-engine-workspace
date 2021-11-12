@@ -104,7 +104,8 @@
         "charconv": "cpp",
         "clocale": "cpp",
         "format": "cpp",
-        "stop_token": "cpp"
+        "stop_token": "cpp",
+        "hash_map": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
