@@ -31,3 +31,6 @@
 [submodule "godot-launcher"]
 	path = godot-launcher
 	url = https://github.com/V-Sekai/godot
+[submodule "groups_godot_modules_javascript"]
+	path = groups_godot_modules_javascript
+	url = https://github.com/V-Sekai/godot-modules-groups.git

@@ -39,7 +39,7 @@
     {
       "label": "Build Web",
       "type": "shell",
-      "command": "scons werror=yes -j34 platform=javascript use_llvm=yes disable_3d=yes disable_2d=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "command": "scons -j34 platform=javascript use_llvm=yes disable_3d=yes disable_2d=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot-launcher"
       },
