@@ -46,9 +46,9 @@
                 "launcher",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linux no update",
+            "program": "${workspaceFolder}/godot-launcher/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot-launcher/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linux launcher",
         },
         {
             "name": "Launch game",
