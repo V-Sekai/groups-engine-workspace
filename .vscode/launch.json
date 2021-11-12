@@ -36,6 +36,21 @@
             "preLaunchTask": "Build Linux",
         },
         {
+            "name": "Launch launcher",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "launcher",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Linux",
+        },
+        {
             "name": "Launch game",
             "type": "cppdbg",
             "request": "launch",
