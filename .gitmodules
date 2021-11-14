@@ -19,6 +19,3 @@
 [submodule "pipelines"]
 	path = pipelines
 	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
-[submodule "launcher"]
-	path = launcher
-	url = https://github.com/fire/V-Sekai-launcher.git
