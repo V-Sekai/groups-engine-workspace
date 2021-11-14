@@ -10,6 +10,3 @@
 [submodule "groups"]
 	path = groups
 	url = git@gitlab.com:SaracenOne/groups.git
-[submodule "proposals"]
-	path = proposals
-	url = https://github.com/V-Sekai/v-sekai-proposals.git
