@@ -11,10 +11,23 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [],
-      "group": "build",
-      "dependsOn": [
-        "Update repos.sh"
-      ]
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
     },
+    {
+      "label": "Build Linux",
+      "type": "shell",
+      "command": "scons -j8 platform=linuxbsd bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+    }
   ]
 }

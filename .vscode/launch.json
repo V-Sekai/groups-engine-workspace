@@ -5,7 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch editor",
+            "name": "Launch editor Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "groups",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.llvm",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Windows",
+        },
+        {
+            "name": "Launch editor Linux",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
