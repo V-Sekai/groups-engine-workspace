@@ -13,6 +13,3 @@
 [submodule "proposals"]
 	path = proposals
 	url = https://github.com/V-Sekai/v-sekai-proposals.git
-[submodule "pipelines"]
-	path = pipelines
-	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
