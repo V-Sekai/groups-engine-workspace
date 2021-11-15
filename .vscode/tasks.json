@@ -6,7 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons -j8 platform=windows bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "command": "scons -j8 platform=windows bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -16,7 +16,7 @@
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons -j8 platform=linuxbsd bits=64 target=release_debug custom_modules=../godot_modules_groups",
+      "command": "scons -j8 platform=linuxbsd bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
