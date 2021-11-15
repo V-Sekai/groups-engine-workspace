@@ -1,4 +1,4 @@
 cd godot
 git fetch
-git checkout groups-4.x -f
-git reset --hard origin/groups-4.x
+git checkout godot-launcher -f
+git reset --hard origin/godot-launcher
