@@ -27,37 +27,6 @@
       "group": "build"
     },
     {
-      "label": "Build Linux Desktop Launcher",
-      "type": "shell",
-      "command": "scons werror=yes -j34 platform=linuxbsd production=yes deprecated=no use_llvm=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules_javascript",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "group": "build",
-      "dependsOn": [
-        "Update repos.sh",
-        "Build Linux no update"
-      ]
-    },
-    {
-      "label": "Build Linux web launcher",
-      "type": "shell",
-      "command": "scons werror=yes -j34 platform=linuxbsd production=yes deprecated=no use_llvm=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules_javascript",
-      "options": {
-        "cwd": "${workspaceFolder}/godot-launcher"
-      },
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "dependsOn": [
-        "Update repos.sh",
-        "Build Web"
-      ]
-    },
-    {
       "label": "Build Web",
       "type": "shell",
       "command": "scons -j34 platform=javascript production=yes deprecated=no disable_2d=yes target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
@@ -94,7 +63,7 @@
       "group": "build"
     },
     {
-      "label": "Update repos.sh",
+      "label": "Update repos",
       "type": "shell",
       "command": "./update_repos.sh",
       "options": {
