@@ -6,7 +6,7 @@
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons werror=yes -j34 platform=linuxbsd use_llvm=yes use_lld=yes tests=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "command": "scons werror=yes -j34 platform=linuxbsd use_llvm=yes use_lld=yes tests=yes bits=64 target=debug custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
