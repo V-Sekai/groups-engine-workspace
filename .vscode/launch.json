@@ -17,7 +17,7 @@
             ],
             "program": "${workspaceFolder}/godot-launcher/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot-launcher/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linux Web Launcher",
+            "preLaunchTask": "Build Linux web launcher",
         },
     ],
 }

@@ -39,6 +39,6 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
-    },
+    }
   ]
 }
