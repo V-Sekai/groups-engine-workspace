@@ -6,11 +6,11 @@
     {
       "label": "Build Linux web launcher",
       "type": "shell",
-      "command": "scons werror=yes -j`nproc` platform=linuxbsd deprecated=no use_llvm=yes use_lld=yes target=release_debug custom_modules=../groups_godot_modules_javascript",
+      "command": "scons -j`nproc` platform=linuxbsd disable_2d=yes deprecated=no target=release_debug custom_modules=../groups_godot_modules_javascript",
       "options": {
         "cwd": "${workspaceFolder}/godot-launcher"
       },
-      "problemMatcher": [],
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -23,7 +23,7 @@
     {
       "label": "Build Web",
       "type": "shell",
-      "command": "scons -j`nproc` platform=javascript deprecated=no target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
+      "command": "scons -j`nproc` platform=javascript disable_2d=yes deprecated=no target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
       "options": {
         "cwd": "${workspaceFolder}/godot-launcher"
       },
