@@ -17,6 +17,19 @@
       ]
     },
     {
+      "label": "Build Windows",
+      "type": "shell",
+      "command": "scons werror=no -j34 platform=windows use_llvm=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
       "label": "Build Linux no update",
       "type": "shell",
       "command": "scons werror=yes -j34 platform=linuxbsd use_llvm=yes use_lld=yes tests=yes bits=64 target=release_debug",
