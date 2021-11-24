@@ -22,6 +22,3 @@
 [submodule "pipelines"]
 	path = pipelines
 	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
-[submodule "hop-dance"]
-	path = hop-dance
-	url = https://github.com/V-Sekai/godot-hop-dance.git
