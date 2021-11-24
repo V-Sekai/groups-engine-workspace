@@ -27,10 +27,10 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "groups",
+                "../godot-hop-dance",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
         },

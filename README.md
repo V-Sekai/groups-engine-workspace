@@ -10,5 +10,9 @@ sudo apt -y install build-essential scons pkg-config libx11-dev libxcursor-dev l
 **List incomplete**
 
 ```
-scoop install gow
+pacman -S ssh-pageant openssh git
+# restart
+git config --global user.email "email@example.com"
+git config --global user.name "Name"
+
 ```
