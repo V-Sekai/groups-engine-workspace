@@ -10,6 +10,11 @@ git config --global url.git@gitlab.com:SaracenOne.pushInsteadOf https://gitlab.c
 ```
 
 ```
-ssh-keyscan github.com
-ssh-keyscan gitlab.com
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+```
+
+```
+pacman -S mingw-w64-x86_64-git-lfs
+export PATH=/mingw64/bin/:$PATH >> ~/.bashrc
 ```
