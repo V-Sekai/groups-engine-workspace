@@ -6,7 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons werror=no -j34 platform=windows use_llvm=yes use_lld=yes bits=64 target=release_debug custom_modules=../groups_godot_modules",
+      "command": "scons target=release_debug bits=64 no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes use_lld=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview'",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -60,16 +60,6 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
-    },
-    {
-      "label": "Build Windows without checkout and without modules",
-      "type": "shell",
-      "command": "scons no_editor_splash=yes dev=yes werror=no tests=no platform=windows -j34 use_llvm=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' use_lld=yes use_mingw=yes bits=64 target=release_debug separate_debug_symbols=yes",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "group": "build"
     },
     {
       "label": "Build doctool on branch",
