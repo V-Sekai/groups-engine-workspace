@@ -5,21 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch editor plain",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "args": [
-                "--path",
-                "dance",
-                "-e"
-            ],
-            "preLaunchTask": "Build Linux no update",
-            "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-        },
-        {
             "name": "Launch editor",
             "type": "cppvsdbg",
             "request": "launch",
@@ -46,7 +31,7 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linux",
+            "preLaunchTask": "Build Windows",
         },
     ],
 }
