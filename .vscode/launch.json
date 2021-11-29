@@ -13,8 +13,8 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "C:/Users/elee/Documents/FBX2glTF/demo",
-                "-e"
+                "groups",
+                "-e",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
