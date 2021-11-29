@@ -7,15 +7,16 @@
         {
             "name": "Launch editor",
             "type": "cppvsdbg",
+            "requireExactSource": true,
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "groups",
+                "C:/Users/elee/Documents/FBX2glTF/demo",
                 "-e"
             ],
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
             "preLaunchTask": "Build Windows",
         },
