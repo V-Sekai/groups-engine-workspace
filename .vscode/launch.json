@@ -13,7 +13,7 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "C:/Users/elee/Documents/avatar-wellness",
+                "groups",
                 "-e",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
