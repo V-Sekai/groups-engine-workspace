@@ -6,7 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons target=release_debug platform=windows -j32 vsproj=yes custom_modules=../groups_godot_modules",
+      "command": "scons float=64 use_llvm=yes deprecated=yes use_mingw=yes target=release_debug platform=windows -j32 LINKFLAGS='-Wl,-pdb= CCFLAGS=-g -gcodeview'  custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
