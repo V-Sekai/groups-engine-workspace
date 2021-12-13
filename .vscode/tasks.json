@@ -6,7 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons float=64 use_llvm=yes deprecated=yes use_mingw=yes target=release_debug platform=windows -j32 LINKFLAGS='-Wl,-pdb= CCFLAGS=-g -gcodeview'  custom_modules=../groups_godot_modules",
+      "command": "scons LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -41,19 +41,6 @@
       "runOptions": {
         "instanceLimit": 1
       }
-    },
-    {
-      "label": "Abort rebase",
-      "type": "shell",
-      "command": "git checkout -f merge-script-4.x",
-      "options": {
-        "cwd": "${workspaceFolder}/merge"
-      },
-      "problemMatcher": [],
-      "runOptions": {
-        "instanceLimit": 1
-      },
-      "group": "build"
     },
     {
       "label": "Update repos",
