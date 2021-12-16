@@ -18,3 +18,20 @@ ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
 pacman -S mingw-w64-x86_64-git-lfs
 export PATH=/mingw64/bin/:$PATH >> ~/.bashrc
 ```
+
+## Visual Studio Code Extensions
+
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+dnf check-update
+sudo dnf install code
+
+1. cpp
+1. clangd
+1. prettier
+
+## Fedora Silverblue
+
+rpm-ostree install scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel     libXi-devel mesa-libGL-devel mesa-libGLU-devel alsa-lib-devel pulseaudio-libs-devel     libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang
+

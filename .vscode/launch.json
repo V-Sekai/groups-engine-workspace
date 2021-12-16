@@ -5,33 +5,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "cppvsdbg",
-      "request": "attach",
-      "name": "Attach",
-      "pid": "${command:pickMyProcess}" // use ${command:pickProcess} to pick other users' processes
-    },
-    {
       "name": "Launch editor",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "groupss", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "args": ["--path", "groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     },
     {
       "name": "Launch game",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
       "args": ["--path", "groups"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     }
   ]
 }
