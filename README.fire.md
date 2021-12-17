@@ -30,8 +30,9 @@ sudo dnf install code
 1. cpp
 1. clangd
 1. prettier
+1. codelldb
 
 ## Fedora Silverblue
 
-rpm-ostree install scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel     libXi-devel mesa-libGL-devel mesa-libGLU-devel alsa-lib-devel pulseaudio-libs-devel     libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang
+rpm-ostree install scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel     libXi-devel mesa-libGL-devel mesa-libGLU-devel alsa-lib-devel pulseaudio-libs-devel libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang
 
