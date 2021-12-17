@@ -36,3 +36,7 @@ sudo dnf install code
 
 rpm-ostree install scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel     libXi-devel mesa-libGL-devel mesa-libGLU-devel alsa-lib-devel pulseaudio-libs-devel libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang
 
+## Pop OS!
+
+sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
+    libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld

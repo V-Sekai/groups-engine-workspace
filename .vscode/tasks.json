@@ -6,15 +6,16 @@
     {
       "label": "Build Linuxbsd",
       "type": "shell",
-      "command": "scons target=release_debug use_mingw=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
+      "command": "scons target=release_debug use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "promptOnClose": true,
-      "group": "build"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Build Windows",
@@ -72,10 +73,7 @@
         "Build Windows without checkout and without modules"
       ],
       "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     }
   ]
 }

@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch editor",
-      "type": "cppdbg",
+      "type": "lldb",
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Launch game",
-      "type": "cppdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/lldb",
