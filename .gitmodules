@@ -22,3 +22,6 @@
 [submodule "pipelines"]
 	path = pipelines
 	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
+[submodule "avatar-wellness"]
+	path = avatar-wellness
+	url = https://github.com/fire/avatar-wellness.git
