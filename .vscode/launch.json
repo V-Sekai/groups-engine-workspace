@@ -10,8 +10,7 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/lldb",
-      "args": ["--path", "groups", "-e"],
+      "args": ["--path", "avatar-wellness", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
@@ -21,8 +20,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/lldb",
-      "args": ["--path", "groups"],
+      "args": ["--path", "avatar-wellness"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
