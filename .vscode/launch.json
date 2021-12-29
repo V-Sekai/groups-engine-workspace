@@ -6,24 +6,26 @@
   "configurations": [
     {
       "name": "Launch editor",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar-wellness", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "args": ["--path", "groups_godot_modules/ewbik/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     },
     {
       "name": "Launch game",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar-wellness"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "args": ["--path", "groups_godot_modules/ewbik/demo"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     }
   ]
 }

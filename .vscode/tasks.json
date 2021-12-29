@@ -6,7 +6,7 @@
     {
       "label": "Build Linuxbsd",
       "type": "shell",
-      "command": "scons target=release_debug use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
+      "command": "scons-3 target=debug use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -20,7 +20,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
+      "command": "scons-3 LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -33,7 +33,7 @@
     {
       "label": "Build Web",
       "type": "shell",
-      "command": "scons -j34 platform=javascript production=yes deprecated=no disable_2d=yes target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
+      "command": "scons-3 -j34 platform=javascript production=yes deprecated=no disable_2d=yes target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
       "options": {
         "cwd": "${workspaceFolder}/godot-launcher"
       },
