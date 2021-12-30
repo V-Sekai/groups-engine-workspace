@@ -12,7 +12,7 @@
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
       "args": ["--path", "groups_godot_modules/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Linuxbsd"
     },
