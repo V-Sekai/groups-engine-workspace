@@ -11,8 +11,8 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "avatar_wellness", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
+      "args": ["--path", "groups_godot_modules/speech/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Linuxbsd"
     },
