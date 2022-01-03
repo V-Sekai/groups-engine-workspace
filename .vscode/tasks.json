@@ -17,7 +17,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons-3 LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
+      "command": "scons dev=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -25,7 +25,10 @@
         "$gcc"
       ],
       "promptOnClose": true,
-      "group": "build"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Build Web",
@@ -70,10 +73,7 @@
         "Build Windows without checkout and without modules"
       ],
       "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     }
   ]
 }
