@@ -11,7 +11,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "groups_godot_modules/speech/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
     },
@@ -21,7 +21,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "avatar_wellness"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
     }
