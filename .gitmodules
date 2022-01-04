@@ -25,3 +25,6 @@
 [submodule "avatar_wellness"]
 	path = avatar_wellness
 	url = https://github.com/fire/avatar-wellness.git
+[submodule "qodot-plugin"]
+	path = qodot-plugin
+	url = https://github.com/fire/qodot-plugin.git
