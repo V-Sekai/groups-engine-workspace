@@ -10,7 +10,7 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar_wellness", "-e", "-v"],
+      "args": ["--path", "C:/Users/elee/Documents/godot-vrm", "-e", "-v"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
