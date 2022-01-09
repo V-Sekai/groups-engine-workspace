@@ -6,24 +6,24 @@
   "configurations": [
     {
       "name": "Launch editor",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "C:/Users/elee/Documents/godot-vrm", "-e", "-v"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+      "args": ["--path", "groups", "-e", "-v"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     },
     {
       "name": "Launch game",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar_wellness"],
+      "args": ["--path", "groups"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Linuxbsd"
     }
   ]
 }
