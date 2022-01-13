@@ -15,6 +15,12 @@ ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
 ```
 
 ```
+sudo yum install -y scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel \
+libXi-devel mesa-libGL-devel mesa-libGLU-devel alsa-lib-devel pulseaudio-libs-devel \
+libudev-devel yasm gcc-c++ libstdc++-static libatomic-static
+```
+
+```
 pacman -S mingw-w64-x86_64-git-lfs
 export PATH=/mingw64/bin/:$PATH >> ~/.bashrc
 ```
