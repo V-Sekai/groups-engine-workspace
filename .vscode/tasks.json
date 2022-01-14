@@ -6,7 +6,7 @@
     {
       "label": "Build Linuxbsd",
       "type": "shell",
-      "command": "scons target=release_debug dev=yes werror=no compilation_db=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
+      "command": "scons target=release_debug dev=yes werror=yes compilation_db=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
