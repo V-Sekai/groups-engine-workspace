@@ -10,7 +10,7 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar_wellness", "-e", "-v"],
+      "args": ["--path", "groups", "-e", "-v"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Linuxbsd"
