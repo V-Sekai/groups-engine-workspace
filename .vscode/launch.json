@@ -21,7 +21,7 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "avatar_wellness", "-e", "-v"],
+      "args": ["--path", "avatar_wellness", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
