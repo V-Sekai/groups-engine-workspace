@@ -16,6 +16,17 @@
       "preLaunchTask": "Build Windows"
     },
     {
+      "name": "Launch editor avatar-wellness",
+      "type": "cppvsdbg",
+      "requireExactSource": true,
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "avatar_wellness", "-e", "-v"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "preLaunchTask": "Build Windows"
+    },
+    {
       "name": "Launch game",
       "type": "cppvsdbg",
       "request": "launch",
