@@ -10,7 +10,7 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
+      "args": ["--path", "gltf_sandbox", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
