@@ -21,7 +21,17 @@
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "C:/Users/elee/Documents/godot-gltf-sandbox", "-e"],
+      "args": ["--path", "groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "preLaunchTask": "Build Windows"
+    },    {
+      "name": "Launch vrm",
+      "type": "cppvsdbg",
+      "requireExactSource": true,
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "C:/Users/elee/Documents/godot-vrm", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
