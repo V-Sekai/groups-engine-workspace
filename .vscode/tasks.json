@@ -17,7 +17,20 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons dev=yes werror=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
+      "command": "scons dev=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "promptOnClose": true,
+      "group": "build"
+    },
+    {
+      "label": "Build Windows MSVC",
+      "type": "shell",
+      "command": "scons werror=yes deprecated=no vsproj=yes target=release_debug platform=windows -j32 custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
