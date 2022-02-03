@@ -17,15 +17,16 @@
     },
     {
       "name": "Launch gltf extensions",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "requireExactSource": true,
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "args": ["--path", "gltf_sandbox", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
-    },    {
+      "preLaunchTask": "Build Linuxbsd No Custom Modules"
+    },    
+    {
       "name": "Launch vrm",
       "type": "cppvsdbg",
       "requireExactSource": true,

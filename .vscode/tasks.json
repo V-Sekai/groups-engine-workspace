@@ -12,6 +12,20 @@
       },
       "problemMatcher": [],
       "promptOnClose": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Build Linuxbsd No Custom Modules",
+      "type": "shell",
+      "command": "scons target=release_debug dev=yes werror=yes compilation_db=yes use_llvm=yes platform=linuxbsd -j`nproc`",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "promptOnClose": true,
       "group": "build"
     },
     {
@@ -38,10 +52,7 @@
         "$msCompile"
       ],
       "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     },
     {
       "label": "Build Web",
