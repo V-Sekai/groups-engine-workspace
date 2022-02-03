@@ -11,7 +11,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.double.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Linuxbsd"
     },
@@ -22,7 +22,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "gltf_sandbox", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.double.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Linuxbsd No Custom Modules"
     },    
