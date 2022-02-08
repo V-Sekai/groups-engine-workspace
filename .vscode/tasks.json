@@ -6,7 +6,7 @@
     {
       "label": "Build Linuxbsd",
       "type": "shell",
-      "command": "scons target=release_debug dev=yes asasn=yes bsan=yes werror=yes compilation_db=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
+      "command": "scons target=release_debug dev=yes werror=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../groups_godot_modules",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -16,88 +16,6 @@
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "Build Linuxbsd No Custom Modules",
-      "type": "shell",
-      "command": "scons target=release_debug dev=yes werror=yes compilation_db=yes use_llvm=yes platform=linuxbsd -j`nproc`",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": "build"
-    },
-    {
-      "label": "Build Windows",
-      "type": "shell",
-      "command": "scons dev=yes werror=no LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no target=release_debug use_mingw=yes use_llvm=yes platform=windows -j32 custom_modules=../groups_godot_modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "promptOnClose": true,
-      "group": "build"
-    },
-    {
-      "label": "Build Windows MSVC",
-      "type": "shell",
-      "command": "scons werror=yes deprecated=no vsproj=yes target=release_debug platform=windows -j32 custom_modules=../groups_godot_modules",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$msCompile"
-      ],
-      "promptOnClose": true,
-      "group": "build"
-    },
-    {
-      "label": "Build Web",
-      "type": "shell",
-      "command": "scons -j34 platform=javascript production=yes deprecated=no disable_2d=yes target=release initial_memory=256 custom_modules=../groups_godot_modules_javascript",
-      "options": {
-        "cwd": "${workspaceFolder}/godot-launcher"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      "label": "Rebase upstream Godot",
-      "type": "shell",
-      "command": "git checkout -f merge-script-4.x && ./update_godot_v_sekai.sh && ./update_repos.sh",
-      "options": {
-        "cwd": "${workspaceFolder}/merge"
-      },
-      "problemMatcher": [],
-      "runOptions": {
-        "instanceLimit": 1
-      }
-    },
-    {
-      "label": "Update repos",
-      "type": "shell",
-      "command": "./update_repos.sh",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Build doctool on branch",
-      "type": "shell",
-      "command": "./bin/godot.windows.opt.tools.64.exe --doctool",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "dependsOn": [
-        "Build Windows without checkout and without modules"
-      ],
-      "problemMatcher": [],
-      "group": "build"
     }
   ]
 }
