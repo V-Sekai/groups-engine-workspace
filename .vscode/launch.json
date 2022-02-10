@@ -32,7 +32,7 @@
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Linux",
+            "preLaunchTask": "Build Linuxbsd (fire)",
         },
     ],
 }
