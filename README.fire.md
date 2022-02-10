@@ -46,3 +46,10 @@ rpm-ostree install scons pkgconfig libX11-devel libXcursor-devel libXrandr-devel
 
 sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
     libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld
+
+## Keep branches in submodules
+
+```
+# https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule
+git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git switch $branch'
+```
