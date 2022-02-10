@@ -20,8 +20,8 @@
             "preLaunchTask": "Build Windows",
         },
         {
-            "name": "Launch editor Linux",
-            "type": "cppdbg",
+            "name": "Launch editor (fire)",
+            "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
