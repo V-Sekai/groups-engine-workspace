@@ -25,9 +25,3 @@
 [submodule "avatar_wellness"]
 	path = avatar_wellness
 	url = https://github.com/fire/avatar-wellness.git
-[submodule "qodot-plugin"]
-	path = qodot-plugin
-	url = https://github.com/fire/qodot-plugin.git
-[submodule "gltf_sandbox"]
-	path = gltf_sandbox
-	url = https://github.com/V-Sekai/godot-gltf-sandbox.git
