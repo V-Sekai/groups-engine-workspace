@@ -13,18 +13,3 @@
 [submodule "groups"]
 	path = groups
 	url = git@gitlab.com:SaracenOne/groups.git
-[submodule "dcc_tools_blender"]
-	path = dcc_tools_blender
-	url = git@github.com:V-Sekai/V-Sekai-Blender-tools.git
-[submodule "proposals"]
-	path = proposals
-	url = https://github.com/V-Sekai/v-sekai-proposals.git
-    branch = master
-[submodule "pipelines"]
-	path = pipelines
-	url = https://github.com/V-Sekai/groups-gocd-pipelines.git
-    branch = master
-[submodule "avatar_wellness"]
-	path = avatar_wellness
-	url = https://github.com/fire/avatar-wellness.git
-    branch = main
