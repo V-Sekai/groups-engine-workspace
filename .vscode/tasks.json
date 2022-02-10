@@ -29,7 +29,7 @@
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes target=release_debug dev=yes use_asan=yes use_tsan=yes use_lsan=yes use_ubsan=yes werror=no use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes target=release_debug dev=yes use_asan=yes use_lsan=yes use_ubsan=yes werror=no use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
