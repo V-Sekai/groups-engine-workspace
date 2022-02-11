@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch editor Windows",
-            "type": "cppvsdbg",
+            "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",

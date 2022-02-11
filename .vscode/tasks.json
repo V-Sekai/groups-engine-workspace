@@ -6,7 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons -j8 platform=windows bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons -j8 platform=windows use_llvm=yes use_mingw=yes bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -21,10 +21,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     },
     {
       "label": "Build Linuxbsd (fire)",
