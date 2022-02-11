@@ -7,3 +7,5 @@
 [submodule "groups"]
 	path = groups
 	url = git@gitlab.com:SaracenOne/groups.git
+[submodule "godot-modules-groups"]
+	url = https://github.com/V-Sekai/godot-modules-groups.git
