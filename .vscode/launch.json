@@ -12,9 +12,8 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "C:/Users/elee/Documents/avatar-wellness",
+                "groups",
                 "-e"
-                // "--test",
             ],
             "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
             "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
