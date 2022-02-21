@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cd godot
 git fetch
 git checkout groups-4.x -f
