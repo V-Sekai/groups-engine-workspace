@@ -33,3 +33,21 @@ sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev 
 # https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule
 git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git switch $branch'
 ```
+
+### Msys2 Windows
+
+```
+scoop install llvm-mingw msys2
+pacman -S ssh-pageant openssh git python3
+notepad ~/.bashrc
+# eval $(/usr/bin/ssh-pageant -r -a "/tmp/.ssh-pageant-$USERNAME")
+source ~/.bashrc
+sh ./update_godot_v_sekai.sh
+cd ..
+git clone https://github.com/V-Sekai/groups-workspace-fire workspace
+cd workspace
+./update_repos.sh
+# Open visual studio code on workspace.
+# Start a build.
+# Go to https://github.com/V-Sekai/godot and update the master branch using the Github ui.
+```
