@@ -36,6 +36,20 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Build Javascript (fire)",
+      "type": "shell",
+      "command": "scons compiledb=yes target=release_debug dev=yes werror=yes use_lld=yes use_llvm=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "promptOnClose": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
