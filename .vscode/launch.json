@@ -20,6 +20,19 @@
             "preLaunchTask": "Build Windows",
         },
         {
+            "name": "Launch editor Windows DVC",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "C:/Users/elee/Documents/dvc-test",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Windows",
+        },
+        {
             "name": "Launch editor (fire)",
             "type": "lldb",
             "request": "launch",
