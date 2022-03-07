@@ -76,7 +76,7 @@
     {
       "label": "Build Mono Windows (fire)",
       "type": "shell",
-      "command": "scons mono_prefix=/var/lib/mono LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' module_mono_enabled=yes debug_symbols=no deprecated=no -j8 platform=windows use_lld=yes use_llvm=yes use_mingw=yes bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons mono_prefix=/opt/mono LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' module_mono_enabled=yes debug_symbols=no deprecated=no -j8 platform=windows use_lld=yes use_llvm=yes use_mingw=yes bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
