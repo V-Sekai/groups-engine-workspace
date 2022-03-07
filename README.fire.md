@@ -51,3 +51,11 @@ cd workspace
 # Start a build.
 # Go to https://github.com/V-Sekai/godot and update the master branch using the Github ui.
 ```
+
+### Mono
+
+dnf copr enable @dotnet-sig/dotnet
+dnf install dotnet-sdk-6.0
+dnf install -y wine-mono
+curl -LO https://curl.haxx.se/ca/cacert.pem
+cert-sync --user cacert.pem
