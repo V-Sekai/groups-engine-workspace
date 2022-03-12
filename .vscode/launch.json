@@ -4,21 +4,36 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        // {
-        //     "name": "Launch editor Windows",
-        //     "type": "cppvsdbg",
-        //     "request": "launch",
-        //     "cwd": "${workspaceFolder}",
-        //     "miDebuggerPath": "/usr/bin/gdb",
-        //     "args": [
-        //         "--path",
-        //         "groups",
-        //         "-e"
-        //     ],
-        //     "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-        //     "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-        //     "preLaunchTask": "Build Windows",
-        // },
+        {
+            "name": "Launch editor Windows",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "args": [
+                "--path",
+                "groups",
+                "-e"
+            ],
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Windows",
+        },
+        {
+            "name": "Launch editor manager Windows",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+            "preLaunchTask": "Build Windows",
+            "args": [
+                "--path",
+                "C:/Users/elee/Documents/MaterialX Material Project",
+                "-e"
+            ],
+        },
         {
             "name": "Launch editor (fire)",
             "type": "lldb",
