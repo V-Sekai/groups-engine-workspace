@@ -20,29 +20,14 @@
             "preLaunchTask": "Build Windows",
         },
         {
-            "name": "Launch editor manager Windows",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-            "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-            "preLaunchTask": "Build Windows",
-            "args": [
-                "--path",
-                "C:/Users/elee/Documents/MaterialX Material Project",
-                "-e"
-            ],
-        },
-        {
-            "name": "Launch editor (fire)",
+            "name": "Launch editor material (fire)",
             "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "/usr/bin/gdb",
             "args": [
                 "--path",
-                "groups",
+                "/home/elee/Downloads/MAT_material_x_sample",
                 "-e"
             ],
             "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",

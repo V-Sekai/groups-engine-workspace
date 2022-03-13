@@ -19,7 +19,7 @@
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons -j`nproc` platform=linuxbsd bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes -j`nproc` platform=linuxbsd bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -29,7 +29,7 @@
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes target=release_debug dev=yes werror=yes use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes target=release_debug werror=yes use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -47,59 +47,6 @@
       "problemMatcher": [],
       "promptOnClose": true,
       "group": "build"
-    },
-    {
-      "label": "Build Mono (fire) glue generator",
-      "type": "shell",
-      "command": "scons compiledb=yes tools=yes module_mono_enabled=yes mono_glue=no use_mingw=yes target=release_debug werror=yes tools=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": "build"
-    },
-    {
-      "label": "Build Mono (fire) glue",
-      "type": "shell",
-      "command": "bin/godot.linuxbsd.opt.tools.64.mono --generate-mono-glue modules/mono/glue",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Build Mono Windows (fire)",
-      "type": "shell",
-      "command": "scons mono_prefix=/opt/mono LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' module_mono_enabled=yes debug_symbols=no deprecated=no -j8 platform=windows use_lld=yes use_llvm=yes use_mingw=yes bits=64 target=release_debug custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Build Mono Linuxbsd (fire)",
-      "type": "shell",
-      "command": "scons compiledb=yes module_mono_enabled=yes target=release_debug dev=yes werror=yes use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
     }
   ]
 }
