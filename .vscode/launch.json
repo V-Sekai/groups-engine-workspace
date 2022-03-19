@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch (fire)",
+      "type": "cppdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "preLaunchTask": "Build Linuxbsd (fire)"
+    },
+    {
       "name": "Launch editor Windows",
       "type": "cppvsdbg",
       "request": "launch",
@@ -14,15 +23,6 @@
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
-    },
-    {
-      "name": "Launch (fire)",
-      "type": "cppdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-      "preLaunchTask": "Build Linuxbsd (fire)"
     },
   ]
 }
