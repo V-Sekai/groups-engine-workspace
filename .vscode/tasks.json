@@ -16,7 +16,7 @@
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons compiledb=yes -j`nproc` platform=linuxbsd bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes -j`nproc` float=64 platform=linuxbsd bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -26,7 +26,7 @@
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes target=release_debug werror=yes use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=64 target=release_debug werror=yes use_lld=yes use_llvm=yes platform=linuxbsd -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -40,7 +40,7 @@
     {
       "label": "Build Javascript (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=64 target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
