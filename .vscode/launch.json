@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.double.opt.tools.64.llvm",
       "preLaunchTask": "Build Linuxbsd (fire)"
     },
     {
@@ -20,7 +20,7 @@
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
       "args": ["--path", "groups"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.double.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
     },
