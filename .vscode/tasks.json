@@ -16,31 +16,31 @@
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons werror=no platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes dev=yes tsan=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Build Linuxbsd (fire)",
+      "type": "shell",
+      "command": "scons compiledb=yes dev=yes tsan=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [],
+      "promptOnClose": true,
       "group": {
         "kind": "build",
         "isDefault": true
       }
     },
     {
-      "label": "Build Linuxbsd (fire)",
-      "type": "shell",
-      "command": "scons werror=no platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": "build"
-    },
-    {
       "label": "Build Javascript (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes float=64 target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes dev=yes target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
