@@ -10,32 +10,35 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": "build"
     },
     {
       "label": "Build Linux",
       "type": "shell",
-      "command": "scons compiledb=yes dev=yes tsan=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes dev=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": "build"
     },
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes dev=yes tsan=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes dev=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     },
     {
       "label": "Build Javascript (fire)",
@@ -44,9 +47,28 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "promptOnClose": true,
       "group": "build"
+    },
+    {
+      "label": "Run regression tests",
+      "type": "shell",
+      "command": "./bin/godot.linuxbsd.opt.tools.64.llvm 40 --audio-driver Dummy --path ../regression-tests/ 2>&1 | tee sanitizers_log.txt || true",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "dependsOn": [
+        "Build Linuxbsd (fire)"
+      ],
+      "problemMatcher": [],
+      "promptOnClose": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
