@@ -9,3 +9,6 @@
 	url = git@gitlab.com:SaracenOne/groups.git
 [submodule "godot-modules-groups"]
 	url = https://github.com/V-Sekai/godot-modules-groups.git
+[submodule "regression-tests"]
+	path = regression-tests
+	url = https://github.com/godotengine/regression-test-project.git
