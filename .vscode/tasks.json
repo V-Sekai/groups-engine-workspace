@@ -28,6 +28,21 @@
       "group": "build"
     },
     {
+      "label": "Build Linux Shared",
+      "type": "shell",
+      "command": "scons compiledb=yes production=yes werror=yes tools=no use_lto=no use_ldd=yes platform=linuxbsd -j`nproc` target=release deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
       "command": "scons compiledb=yes werror=yes dev=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
@@ -65,10 +80,7 @@
       ],
       "problemMatcher": [],
       "promptOnClose": true,
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     }
   ]
 }
