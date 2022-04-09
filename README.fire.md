@@ -37,6 +37,8 @@ git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodu
 ### Msys2 Windows
 
 ```
+# install scoop
+scoop bucket add dorado https://github.com/chawyehsu/dorado
 scoop install llvm-mingw msys2
 pacman -S ssh-pageant openssh git python3
 notepad ~/.bashrc
