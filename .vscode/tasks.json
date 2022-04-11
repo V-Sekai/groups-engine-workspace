@@ -6,31 +6,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons compiledb=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j8 platform=windows use_llvm=yes use_mingw=yes bits=64 target=release_debug custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Build Linux",
-      "type": "shell",
-      "command": "scons compiledb=yes dev=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Build Linux Shared",
-      "type": "shell",
-      "command": "scons compiledb=yes production=yes werror=yes tools=no use_lto=no use_ldd=yes platform=linuxbsd -j`nproc` target=release deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=64 LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j8 platform=windows bits=64 use_mingw=yes use_llvm=yes target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -43,9 +19,33 @@
       }
     },
     {
+      "label": "Build Linux",
+      "type": "shell",
+      "command": "scons compiledb=yes float=64 dev=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Build Linux Shared",
+      "type": "shell",
+      "command": "scons compiledb=yes float=64 production=yes werror=yes tools=no use_lto=no use_ldd=yes platform=linuxbsd -j`nproc` target=release deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes werror=yes dev=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=32 werror=yes dev=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -58,7 +58,7 @@
     {
       "label": "Build Javascript (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes dev=yes target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=32 dev=yes target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -71,7 +71,7 @@
     {
       "label": "Run regression tests",
       "type": "shell",
-      "command": "./bin/godot.linuxbsd.opt.tools.64.llvm.san 40 --audio-driver Dummy --path ../regression-tests/ 2>&1 | tee sanitizers_log.txt || true",
+      "command": "./bin/godot.linuxbsd.double.opt.tools.64.llvm.san 40 --audio-driver Dummy --path ../regression-tests/ 2>&1 | tee sanitizers_log.txt || true",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
