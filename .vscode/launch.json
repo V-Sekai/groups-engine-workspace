@@ -5,12 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(Windows) Attach",
-      "type": "cppvsdbg",
-      "request": "attach",
-      "processId": "${command:pickProcess}"
-    },
-    {
       "name": "Launch (fire)",
       "type": "cppdbg",
       "request": "launch",
@@ -18,6 +12,12 @@
       "args": ["--path", "groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.double.opt.tools.64.llvm",
       "preLaunchTask": "Build Linuxbsd (fire)"
+    },
+    {
+      "name": "(Windows) Attach",
+      "type": "cppvsdbg",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
     },
     {
       "name": "Launch editor Windows",
