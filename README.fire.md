@@ -24,8 +24,10 @@ libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang ccache clang-
 
 ## Pop OS!
 
+```
 sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
     libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld
+```
 
 ## Keep branches in submodules
 
