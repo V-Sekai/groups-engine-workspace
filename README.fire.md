@@ -26,7 +26,7 @@ libudev-devel yasm gcc-c++ libstdc++-static libatomic-static clang ccache clang-
 
 ```
 sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
-    libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld
+    libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld libxt-dev
 ```
 
 ## Keep branches in submodules
