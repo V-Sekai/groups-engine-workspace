@@ -6,11 +6,11 @@
     "configurations": [    
         {
             "name": "Launch",
-            "type": "cppvsdbg",
+            "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "program":  "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
-            "preLaunchTask": "build",
+            "preLaunchTask": "Build",
         }
     ]
 }
