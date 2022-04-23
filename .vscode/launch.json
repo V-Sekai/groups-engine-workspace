@@ -9,6 +9,7 @@
             "type": "lldb",
             "request": "launch",
             "cwd": "${workspaceFolder}",
+            "args": ["--path", "groups_project", "-e"],
             "program":  "${workspaceFolder}/godot/bin/godot.x11.opt.tools.64.llvm",
             "preLaunchTask": "Build",
         }

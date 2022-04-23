@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "scons platform=linuxbsd -j`nproc` bits=64 use_lld=yes use_llvm=yes use_thinlto=yes target=release_debug",
+            "command": "scons platform=linuxbsd werror=no -j`nproc` bits=64 use_lld=yes use_llvm=yes target=release_debug",
             "problemMatcher": [],
             "options": {
                 "cwd": "${workspaceFolder}/godot"
