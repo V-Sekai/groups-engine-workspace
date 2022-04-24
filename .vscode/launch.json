@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "C:/Chibifire.com/ML_avatar_wellness","-e"],
+      "args": ["--path", "groups","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.double.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
