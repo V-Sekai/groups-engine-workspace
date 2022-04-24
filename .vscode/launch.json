@@ -5,6 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Windows",
+      "type": "lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "args": ["--path", "C:/Chibifire.com/ML_avatar_wellness","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.double.opt.tools.64.exe",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "preLaunchTask": "Build Windows"
+    },
+    {
       "name": "Launch Projects (fire)",
       "type": "lldb",
       "request": "launch",
@@ -26,17 +37,6 @@
       "type": "lldb",
       "request": "attach",
       "processId": "${command:pickProcess}"
-    },
-    {
-      "name": "Launch editor Windows",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "C:/Chibifire.com/ML_avatar_wellness","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.double.opt.tools.64.exe",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
     },
     {
       "name": "Launch regression test",
