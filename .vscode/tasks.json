@@ -4,9 +4,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build Windows",
+      "label": "Build osx",
       "type": "shell",
-      "command": "scons compiledb=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=32 dev=yes werror=yes platform=osx target=release_debug -j12 deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -17,6 +17,18 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Build Windows",
+      "type": "shell",
+      "command": "scons compiledb=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes target=release_debug custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
     },
     {
       "label": "Build Linux",

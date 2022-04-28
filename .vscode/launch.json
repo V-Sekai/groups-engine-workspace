@@ -5,6 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Macos",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "args": ["--path", "groups","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.osx.tools.64.exe",
+      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "preLaunchTask": "Build osx"
+    },
+    {
       "name": "Launch editor Windows",
       "type": "cppvsdbg",
       "request": "launch",
