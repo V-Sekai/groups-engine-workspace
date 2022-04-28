@@ -6,13 +6,12 @@
   "configurations": [
     {
       "name": "Launch editor Macos",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
       "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.tools.64.exe",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
+      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Build osx"
     },
     {
