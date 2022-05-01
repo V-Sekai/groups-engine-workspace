@@ -21,7 +21,7 @@
     {
       "label": "Build Windows",
       "type": "shell",
-      "command": "scons compiledb=yes test=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes target=debug custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes test=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
