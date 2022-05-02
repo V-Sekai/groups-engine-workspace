@@ -5,16 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor Macos",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
-      "preLaunchTask": "Build osx"
-    },
-    {
       "name": "Launch editor Windows",
       "type": "cppvsdbg",
       "request": "launch",
@@ -24,6 +14,16 @@
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
+    },
+    {
+      "name": "Launch editor Macos",
+      "type": "lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "args": ["--path", "groups","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
+      "preLaunchTask": "Build osx"
     },
     {
       "name": "Launch Projects (fire)",
