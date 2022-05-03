@@ -22,13 +22,8 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "problemMatcher": [],
+      "group": "build"
     },
     {
       "label": "Build Windows MSVC",
@@ -49,9 +44,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "group": "build"
     },
     {
@@ -69,15 +62,16 @@
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons compiledb=yes float=32 werror=yes dev=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons compiledb=yes float=32 werror=yes dev=yes platform=linuxbsd target=debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "promptOnClose": true,
-      "group": "build"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Build Javascript (fire)",
