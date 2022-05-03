@@ -9,7 +9,7 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../ANIM_ik_samples","-e"],
+      "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "preLaunchTask": "Build Linuxbsd (fire)"
     },
