@@ -30,7 +30,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
+      "args": ["--path", "C:/Users/elee/Documents/ANIM_ik_samples","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
       "preLaunchTask": "Build Windows"
