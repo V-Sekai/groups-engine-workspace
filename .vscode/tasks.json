@@ -62,7 +62,7 @@
     {
       "label": "Build Linuxbsd (fire)",
       "type": "shell",
-      "command": "scons target=debug compiledb=yes float=32 werror=yes dev=yes platform=linuxbsd -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
+      "command": "scons target=release_debug compiledb=yes float=32 werror=yes dev=yes platform=linuxbsd -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },

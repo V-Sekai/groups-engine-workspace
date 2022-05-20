@@ -23,20 +23,8 @@
       // "args": ["perf record -o perf.data --call-graph dwarf --aio --sample-cpu ./godot/bin/godot.linuxbsd.opt.tools.64.llvm --path groups"],
       // "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
       "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "preLaunchTask": "Build Linuxbsd (fire)"
-    },
-    {
-      "name": "Launch editor Windows ik test",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "groups","-e"],
-      //"args": ["--path", "C:/Users/elee/Documents/ANIM_ik_samples","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
     },
     {
       "name": "Launch editor Macos",
@@ -47,15 +35,6 @@
       "args": ["--path", "groups","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Build osx"
-    },
-    {
-      "name": "Launch (fire)",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-      "preLaunchTask": "Build Linuxbsd (fire)"
     },
     {
       "name": "(Windows) Attach",
