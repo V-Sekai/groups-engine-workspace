@@ -16,17 +16,6 @@
       "preLaunchTask": "Build Linux"
     },
     {
-      "name": "Launch editor Windows",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-      "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Windows"
-    },
-    {
       "name": "Launch editor Macos",
       "type": "lldb",
       "request": "launch",
@@ -37,21 +26,15 @@
       "preLaunchTask": "Build osx"
     },
     {
-      "name": "(Windows) Attach",
-      "type": "lldb",
-      "request": "attach",
-      "processId": "${command:pickProcess}"
-    },
-    {
       "name": "Launch regression test",
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "miDebuggerPath": "/usr/bin/gdb",
       "args": ["--audio-driver", "Dummy", "--path", "regression-tests"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.double.opt.tools.64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "visualizerFile": "${workspaceFolder}/godot/platform/windows/godot.natvis",
-      "preLaunchTask": "Build Linuxbsd (fire)"
+      "preLaunchTask": "Build Linux"
     },
   ]
 }
