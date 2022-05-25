@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Windows",
+      "type": "lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "groups","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "preLaunchTask": "Build Windows"
+    },
+    {
       "name": "Launch Projects (fire)",
       "type": "lldb",
       "request": "launch",
