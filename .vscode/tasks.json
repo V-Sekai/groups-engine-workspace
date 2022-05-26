@@ -74,20 +74,6 @@
       ],
       "promptOnClose": true,
       "group": "build"
-    },
-    {
-      "label": "Run regression tests",
-      "type": "shell",
-      "command": "./bin/godot.linuxbsd.double.opt.tools.64.llvm.san 40 --audio-driver Dummy --path ../regression-tests/ 2>&1 | tee sanitizers_log.txt || true",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "dependsOn": [
-        "Build Linuxbsd (fire)"
-      ],
-      "problemMatcher": [],
-      "promptOnClose": true,
-      "group": "build"
     }
   ]
 }

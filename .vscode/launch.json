@@ -30,15 +30,6 @@
       "args": ["--path", "groups","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Build osx"
-    },
-    {
-      "name": "Launch regression test",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--audio-driver", "Dummy", "--path", "regression-tests"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-      "preLaunchTask": "Build Linux"
-    },
+    }
   ]
 }
