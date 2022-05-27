@@ -9,27 +9,9 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups","-e"],
+      "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "preLaunchTask": "Build Windows"
     },
-    {
-      "name": "Launch Projects (fire)",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
-      "preLaunchTask": "Build Linux"
-    },
-    {
-      "name": "Launch editor Macos",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
-      "preLaunchTask": "Build osx"
-    }
   ]
 }
