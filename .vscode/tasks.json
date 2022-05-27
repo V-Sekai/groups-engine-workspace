@@ -4,75 +4,12 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build osx",
-      "type": "shell",
-      "command": "scons compiledb=yes float=32 dev=yes werror=yes platform=osx target=release_debug -j6 deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Build Windows",
-      "type": "shell",
-      "command": "scons compiledb=yes test=yes LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes target=release_debug custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "group": "build"
-    },
-    {
       "label": "Build Windows MSVC",
       "type": "shell",
       "command": "scons bits=64 compiledb=yes vsproj=yes test=yes debug_symbols=no deprecated=no -j32 platform=windows bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Build Linux",
-      "type": "shell",
-      "command": "scons target=release_debug compiledb=yes float=32 dev=yes werror=yes platform=linuxbsd target=release_debug -j`nproc` use_lto=no deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Build Linux Shared",
-      "type": "shell",
-      "command": "scons compiledb=yes float=64 production=yes werror=yes tools=no use_lto=no use_ldd=yes platform=linuxbsd -j`nproc` target=release deprecated=no use_static_cpp=yes use_llvm=yes builtin_freetype=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "Build Javascript (fire)",
-      "type": "shell",
-      "command": "scons compiledb=yes float=32 dev=yes target=release_debug werror=yes tools=yes platform=javascript -j`nproc` custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "promptOnClose": true,
       "group": "build"
     }
   ]

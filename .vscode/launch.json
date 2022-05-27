@@ -11,7 +11,7 @@
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
-      "preLaunchTask": "Build Windows"
+      "preLaunchTask": "Build Windows MSVC"
     },
   ]
 }
