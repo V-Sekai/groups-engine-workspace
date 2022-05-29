@@ -6,10 +6,10 @@
   "configurations": [
     {
       "name": "Launch editor Windows",
-      "type": "",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
+      "args": ["--path", "groups","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "preLaunchTask": "Build Windows MSVC"
     },
