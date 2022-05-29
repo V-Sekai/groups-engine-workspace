@@ -1,0 +1,17 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch editor Windows",
+      "type": "",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "godot-modules-groups/ewbik/demo","-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "preLaunchTask": "Build Windows MSVC"
+    },
+  ]
+}
