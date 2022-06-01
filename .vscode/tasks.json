@@ -15,6 +15,19 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Build Windows Mingw",
+      "type": "shell",
+      "command": "scons bits=64 compiledb=yes test=yes debug_symbols=no deprecated=no -j32 platform=windows bits=64 target=debug use_mingw=yes use_llvm=yes custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
     }
   ]
 }
