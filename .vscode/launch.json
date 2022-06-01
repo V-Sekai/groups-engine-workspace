@@ -9,7 +9,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "C:/Users/elee/Documents/godot-xchange-scene","-e"],
+      "args": ["--path", "groups","-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64.exe",
       "preLaunchTask": "Build Windows Mingw"
     },
