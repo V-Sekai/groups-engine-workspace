@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
       "preLaunchTask": "Build Windows Mingw"
     },
   ]
