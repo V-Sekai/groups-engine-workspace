@@ -5,12 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor Windows",
+      "name": "Launch editor OSX",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "groups","-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.osx.tools.64",
       "preLaunchTask": "Build Windows Mingw"
     },
   ]
