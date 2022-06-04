@@ -6,12 +6,12 @@
   "configurations": [
     {
       "name": "Launch editor OSX",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.osx.tools.64",
-      "preLaunchTask": "Build Windows OSX"
+      "args": ["--path", "../SCENE_morning_in_a_cafe", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
+      "preLaunchTask": "Build OSX"
     },
   ]
 }
