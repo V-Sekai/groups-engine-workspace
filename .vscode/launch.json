@@ -9,9 +9,9 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups","-e"],
+      "args": ["--path", "groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.osx.tools.64",
-      "preLaunchTask": "Build Windows Mingw"
+      "preLaunchTask": "Build Windows OSX"
     },
   ]
 }
