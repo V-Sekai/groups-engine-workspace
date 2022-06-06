@@ -10,10 +10,7 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "problemMatcher": []
     },
     {

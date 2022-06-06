@@ -5,13 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor OSX",
-      "type": "lldb",
+      "name": "Launch editor Windows",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../SCENE_morning_in_a_cafe", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
-      "preLaunchTask": "Build OSX"
+      "args": ["--path", "groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+      "preLaunchTask": "Build Windows Mingw"
     },
   ]
 }
