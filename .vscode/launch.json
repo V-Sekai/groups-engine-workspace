@@ -9,8 +9,8 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64",
       "preLaunchTask": "Build Windows Mingw"
     },
   ]
