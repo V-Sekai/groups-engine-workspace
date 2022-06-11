@@ -9,7 +9,7 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../SKEL_fire_rabbit", "-e"],
+      "args": ["--path", "SKEL_fire_rabbit", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
       "preLaunchTask": "Linux",
     },
