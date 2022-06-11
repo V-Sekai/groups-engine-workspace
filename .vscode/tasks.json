@@ -13,9 +13,19 @@
       "problemMatcher": []
     },
     {
-      "label": "Build Windows Mingw",
+      "label": "Windows",
       "type": "shell",
       "command": "scons target=release_debug bits=64 compiledb=yes test=yes debug_symbols=no deprecated=no -j32 platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Linux",
+      "type": "shell",
+      "command": "scons target=release_debug bits=64 compiledb=yes test=yes deprecated=no -j32 platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -23,9 +33,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [
-        "$gcc"
-      ]
+      "problemMatcher": []
     }
   ]
 }
