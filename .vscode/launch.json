@@ -4,14 +4,15 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "Launch editor Windows",
-      "type": "cppvsdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.tools.64",
-      "preLaunchTask": "Build Windows Mingw"
+      "args": ["--path", "../SKEL_fire_rabbit", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+      "preLaunchTask": "${defaultBuildTask}",
     },
   ]
 }
