@@ -6,9 +6,6 @@
 	url = git@gitlab.com:SaracenOne/groups.git
 [submodule "godot-modules-groups"]
 	url = https://github.com/V-Sekai/godot-modules-groups.git
-[submodule "godot"]
-	path = godot
-	url = https://github.com/V-Sekai/godot
 [submodule "SKEL_fire_rabbit"]
 	path = SKEL_fire_rabbit
 	url = https://github.com/V-Sekai-fire/SKEL_fire_rabbit.git
