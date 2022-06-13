@@ -15,7 +15,7 @@
     },
     {
       "name": "Launch editor Windows",
-      "type": "lldb",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "SKEL_fire_rabbit", "-e"],
