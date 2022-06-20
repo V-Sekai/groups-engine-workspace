@@ -19,21 +19,30 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "problemMatcher": []
     },
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons werror=yes target=release_debug bits=64 compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
+      "command": "scons -j36 target=release_debug bits=64 compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
       "group": "build",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build:request_sender",
+      "path": "godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "npm: build:request_sender - godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
+      "detail": "asc samples/request_sender.ts -b build/request_sender.wasm -t build/request_sender.wat --sourceMap --validate --optimize --use abort="
     }
   ]
 }
