@@ -19,7 +19,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "SKEL_fire_rabbit", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
+      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Mac",
     },
     {
