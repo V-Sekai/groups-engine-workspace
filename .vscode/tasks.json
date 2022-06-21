@@ -4,13 +4,17 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build OSX",
+      "label": "Mac",
       "type": "shell",
       "command": "scons bits=64 compiledb=yes test=yes deprecated=no -j6 platform=osx bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Windows",
@@ -36,10 +40,7 @@
       "type": "npm",
       "script": "build:request_sender",
       "path": "godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "problemMatcher": [],
       "label": "npm: build:request_sender - godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
       "detail": "asc samples/request_sender.ts -b build/request_sender.wasm -t build/request_sender.wat --sourceMap --validate --optimize --use abort="
