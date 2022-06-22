@@ -11,10 +11,7 @@
         "cwd": "${workspaceFolder}/godot"
       },
       "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "group": "build"
     },
     {
       "label": "Windows",
@@ -33,7 +30,10 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": []
     },
     {
