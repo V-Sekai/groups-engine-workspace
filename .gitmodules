@@ -1,9 +1,6 @@
 [submodule "https://github.com/V-Sekai/godot"]
 	path = https://github.com/V-Sekai/godot
 	url = godot
-[submodule "groups"]
-	path = groups
-	url = git@gitlab.com:SaracenOne/groups.git
 [submodule "godot-modules-groups"]
 	url = https://github.com/V-Sekai/godot-modules-groups.git
 [submodule "godot"]
