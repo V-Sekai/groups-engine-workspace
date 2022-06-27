@@ -29,6 +29,8 @@ sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev 
     libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libudev-dev libxi-dev libxrandr-dev yasm ninja-build ccache clang lldb lld libxt-dev
 ```
 
+Install codelldb in visual studio code.
+
 ## Keep branches in submodules
 
 ```
