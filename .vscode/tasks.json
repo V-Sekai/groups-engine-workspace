@@ -20,20 +20,20 @@
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "problemMatcher": []
     },
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons -j36 target=release_debug bits=64 compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
+      "command": "scons werror=yes -j36 target=release_debug bits=64 compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": []
     },
     {
