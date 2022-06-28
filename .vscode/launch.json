@@ -27,7 +27,7 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../TEST_ewbik", "-e"],
+      "args": ["--path", "groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
       "preLaunchTask": "Windows",
     },

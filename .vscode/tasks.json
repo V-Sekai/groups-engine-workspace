@@ -36,14 +36,5 @@
       },
       "problemMatcher": []
     },
-    {
-      "type": "npm",
-      "script": "build:request_sender",
-      "path": "godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
-      "group": "build",
-      "problemMatcher": [],
-      "label": "npm: build:request_sender - godot-modules-groups/wasgo/thirdparty/wasm-micro-runtime/assembly-script",
-      "detail": "asc samples/request_sender.ts -b build/request_sender.wasm -t build/request_sender.wat --sourceMap --validate --optimize --use abort="
-    }
   ]
 }
