@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Mac",
+      "type": "lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "../groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
+      "preLaunchTask": "Mac",
+    },
+    {
       "name": "Launch editor Windows",
       "type": "cppvsdbg",
       "request": "launch",
@@ -21,15 +30,6 @@
       "args": ["--path", "SKEL_fire_rabbit", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
       "preLaunchTask": "Linux",
-    },
-    {
-      "name": "Launch editor Mac",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "SKEL_fire_rabbit", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
-      "preLaunchTask": "Mac",
     },
   ]
 }
