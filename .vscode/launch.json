@@ -9,7 +9,7 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "../groups", "-e"],
+      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Mac",
     },
