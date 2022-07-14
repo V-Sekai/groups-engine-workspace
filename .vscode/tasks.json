@@ -6,7 +6,7 @@
     {
       "label": "Mac",
       "type": "shell",
-      "command": "scons bits=64 use_ubsan=yes use_asan=yes compiledb=yes test=yes deprecated=no -j6 platform=osx bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons bits=64 compiledb=yes test=yes deprecated=no -j6 platform=osx bits=64 target=release_debug custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
