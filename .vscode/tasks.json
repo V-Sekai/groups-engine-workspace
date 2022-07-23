@@ -39,7 +39,7 @@
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons werror=yes -j36 target=release_debug bits=64 compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
+      "command": "scons -j32 target=release_debug bits=64 use_llvm=yes compiledb=yes test=yes deprecated=no platform=linuxbsd bits=64 custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },

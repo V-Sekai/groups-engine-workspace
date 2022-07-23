@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Linux",
+      "type": "cppdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
+      "preLaunchTask": "Linux",
+    },
+    {
       "name": "Launch editor Mac",
       "type": "lldb",
       "request": "launch",
@@ -22,15 +31,6 @@
       "args": ["--path", "../groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
       "preLaunchTask": "Windows",
-    },
-    {
-      "name": "Launch editor Linux",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64",
-      "preLaunchTask": "Linux",
     },
   ]
 }
