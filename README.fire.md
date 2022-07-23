@@ -31,13 +31,6 @@ sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev 
 
 Install codelldb in visual studio code.
 
-## Keep branches in submodules
-
-```
-# https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule
-git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git switch $branch'
-```
-
 ### Msys2 Windows
 
 ```
@@ -57,11 +50,3 @@ cd workspace
 # Start a build.
 # Go to https://github.com/V-Sekai/godot and update the master branch using the Github ui.
 ```
-
-### Mono
-
-dnf copr enable @dotnet-sig/dotnet
-dnf install dotnet-sdk-6.0
-dnf install -y wine-mono
-curl -LO https://curl.haxx.se/ca/cacert.pem
-cert-sync --user cacert.pem
