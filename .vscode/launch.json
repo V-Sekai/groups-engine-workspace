@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch editor Windows",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "../groups", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
+      "preLaunchTask": "Windows",
+    },
+    {
       "name": "Launch editor Linux",
       "type": "cppdbg",
       "request": "launch",
@@ -22,15 +31,6 @@
       "args": ["--path", "groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
       "preLaunchTask": "Mac",
-    },
-    {
-      "name": "Launch editor Windows",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "../groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.64",
-      "preLaunchTask": "Windows",
     },
   ]
 }
