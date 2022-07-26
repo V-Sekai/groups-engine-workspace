@@ -15,13 +15,12 @@
     },
     {
       "name": "Launch editor Linux",
-      "type": "cppdbg",
+      "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "../groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.64.llvm",
       "preLaunchTask": "Linux",
-      "miDebuggerPath": "/usr/bin/gdb"
     },
     {
       "name": "Launch editor Mac",
