@@ -15,7 +15,7 @@
     },
     {
       "name": "Launch editor Linux",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "../groups", "-e"],
