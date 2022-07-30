@@ -107,7 +107,10 @@
         "stop_token": "cpp",
         "hash_map": "cpp",
         "__config": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "span": "cpp",
+        "valarray": "cpp",
+        "*.ipp": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
