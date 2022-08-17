@@ -3,6 +3,3 @@
 	url = godot
 [submodule "godot-modules-groups"]
 	url = https://github.com/V-Sekai/godot-modules-groups.git
-[submodule "godot"]
-	path = godot
-	url = https://github.com/V-Sekai/godot
