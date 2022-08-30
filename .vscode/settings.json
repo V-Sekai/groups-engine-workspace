@@ -110,7 +110,15 @@
         "__nullptr": "cpp",
         "span": "cpp",
         "valarray": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "cwctype": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp",
+        "__debug": "cpp",
+        "__errc": "cpp",
+        "__functional_base": "cpp",
+        "__string": "cpp",
+        "__threading_support": "cpp"
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
