@@ -122,5 +122,6 @@
     },
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json"
 }
