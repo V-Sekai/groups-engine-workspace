@@ -12,7 +12,7 @@
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
       // "args": ["--path", "../groups", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.x86_64.llvm.exe",
-      "preLaunchTask": "Windows",
+      "preLaunchTask": "Windows MSVC",
     },
     {
       "name": "Launch editor Linux",
