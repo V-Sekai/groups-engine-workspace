@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch editor Windows",
-      "type": "lldb",
+      "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
