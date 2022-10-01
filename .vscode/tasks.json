@@ -6,7 +6,7 @@
     {
       "label": "Mac",
       "type": "shell",
-      "command": "scons bits=64 compiledb=yes test=yes deprecated=no platform=osx bits=64 target=release_debug custom_modules=../godot-modules-groups",
+      "command": "scons bits=64 compiledb=yes test=yes deprecated=no platform=osx bits=64 target=editor custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -19,7 +19,27 @@
     {
       "label": "Windows",
       "type": "shell",
-      "command": "scons target=release_debug bits=64 compiledb=yes warning=no test=yes debug_symbols=no platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../godot-modules-groups",
+      "command": "scons target=editor bits=64 compiledb=yes warning=no test=yes debug_symbols=no platform=windows bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Windows MSVC",
+      "type": "shell",
+      "command": "scons target=editor vsproj=yes bits=64 compiledb=yes warning=no test=yes deprecated=no platform=windows bits=64 custom_modules=../godot-modules-groups",
+      "options": {
+        "cwd": "${workspaceFolder}/godot"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Linux",
+      "type": "shell",
+      "command": "scons target=editor bits=64 use_static_cpp=no use_llvm=yes compiledb=yes test=yes platform=linuxbsd custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
@@ -30,29 +50,9 @@
       "problemMatcher": []
     },
     {
-      "label": "Windows MSVC",
-      "type": "shell",
-      "command": "scons target=release_debug vsproj=yes bits=64 compiledb=yes warning=no test=yes deprecated=no platform=windows bits=64 custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "group": "build",
-      "problemMatcher": []
-    },
-    {
-      "label": "Linux",
-      "type": "shell",
-      "command": "scons target=release_debug bits=64 use_llvm=yes compiledb=yes test=yes platform=linuxbsd custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "group": "build",
-      "problemMatcher": []
-    },
-    {
       "label": "Web",
       "type": "shell",
-      "command": "scons target=release_debug platform=web compiledb=yes warnings=no test=yes custom_modules=../godot-modules-groups",
+      "command": "scons target=editor platform=web compiledb=yes warnings=no test=yes custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
