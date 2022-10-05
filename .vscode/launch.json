@@ -20,7 +20,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.tools.x86_64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
       "preLaunchTask": "Linux",
     },
     {
