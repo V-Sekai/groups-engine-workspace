@@ -11,7 +11,7 @@
       "cwd": "${workspaceFolder}",
       "args": ["--path", "/home/elee/Documents/godot-subdiv", "-e"],
       //"args": ["--path", "../groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.opt.tools.x86_64.llvm.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.tools.x86_64.llvm.exe",
       "preLaunchTask": "Windows",
     },
     {
@@ -20,7 +20,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.opt.tools.x86_64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.tools.x86_64.llvm",
       "preLaunchTask": "Linux",
     },
     {
@@ -30,7 +30,7 @@
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
       // "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.opt.tools.64",
+      "program": "${workspaceFolder}/godot/bin/godot.osx.editor.tools.64",
       "preLaunchTask": "Mac",
     },
   ]

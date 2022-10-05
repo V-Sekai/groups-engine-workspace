@@ -39,7 +39,7 @@
     {
       "label": "Linux",
       "type": "shell",
-      "command": "scons target=editor bits=64 use_static_cpp=no use_llvm=yes compiledb=yes test=yes platform=linuxbsd custom_modules=../godot-modules-groups",
+      "command": "scons target=editor bits=64 use_static_cpp=no use_llvm=yes compiledb=yes LINKFLAGS=-L/opt/rh/gcc-toolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/ test=yes platform=linuxbsd custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
