@@ -9,9 +9,8 @@
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "args": ["--path", "/home/elee/Documents/godot-subdiv", "-e"],
-      //"args": ["--path", "../groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.tools.x86_64.llvm.exe",
+      "args": ["--path", "../v-sekai-game", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.x86_64.llvm.exe",
       "preLaunchTask": "Windows",
     },
     {
