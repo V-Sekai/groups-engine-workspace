@@ -3,3 +3,6 @@
 [submodule "godot"]
 	path = godot
 	url = https://github.com/V-Sekai/godot
+[submodule "v-sekai-game"]
+	path = v-sekai-game
+	url = https://github.com/V-Sekai/v-sekai-game.git
