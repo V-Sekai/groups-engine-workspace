@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.double.x86_64.llvm.exe",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows",
     },
     {
@@ -19,7 +19,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.double.x86_64.llvm",
+      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
       "preLaunchTask": "Linux",
     },
     {
@@ -29,7 +29,7 @@
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
       // "args": ["--path", "groups", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.editor.double.tools.64",
+      "program": "${workspaceFolder}/godot/bin/godot.osx.editor.tools.64",
       "preLaunchTask": "Mac",
     },
   ]
