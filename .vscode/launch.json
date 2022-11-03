@@ -9,7 +9,7 @@
       "type": "lldb",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      // "args": ["--path", "v-sekai-game", "-e"],
+      "args": ["--path", "godot/modules/ewbik/demo", "-e"],
       "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
       "preLaunchTask": "Windows",
     },

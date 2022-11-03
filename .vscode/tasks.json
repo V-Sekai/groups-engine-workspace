@@ -16,7 +16,7 @@
     {
       "label": "Windows",
       "type": "shell",
-      "command": "scons target=editor bits=64 optimize=speed compiledb=yes warning=no test=yes debug_symbols=no platform=windows dev_build=yes bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../godot-modules-groups",
+      "command": "scons target=editor bits=64 optimize=speed compiledb=yes warning=no test=yes debug_symbols=no platform=windows dev_build=yes bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no",// custom_modules=../godot-modules-groups",
       "options": {
         "cwd": "${workspaceFolder}/godot"
       },
