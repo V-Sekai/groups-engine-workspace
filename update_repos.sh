@@ -1,4 +1,4 @@
-msy#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 cd godot
 git fetch

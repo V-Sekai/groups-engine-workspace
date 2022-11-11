@@ -14,6 +14,15 @@
       "preLaunchTask": "Windows",
     },
     {
+      "name": "Launch editor IK Windows",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
+      "preLaunchTask": "Windows",
+    },
+    {
       "name": "Launch editor Linux",
       "type": "lldb",
       "request": "launch",
