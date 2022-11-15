@@ -10,8 +10,8 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
-      "preLaunchTask": "Windows",
+      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.exe",
+      "preLaunchTask": "Windows MSVC",
     },
     {
       "name": "Launch editor IK Windows",

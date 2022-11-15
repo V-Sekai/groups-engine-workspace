@@ -125,5 +125,6 @@
     "python.formatting.provider": "black",
     "cmake.configureOnOpen": true,
     "telemetry.enableCrashReporter": false,
-    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json"
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\godot\\compile_commands.json",
+    "godot_tools.editor_path": "c:\\Users\\ernes\\Documents\\VSEKAI_workspace\\godot\\bin\\godot.windows.editor.dev.x86_64.exe"
 }
