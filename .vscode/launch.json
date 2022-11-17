@@ -10,7 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/v-sekai-game/build/windows_release_x86_64.exe",
+      "program": "${workspaceFolder}/build/windows_release_x86_64.exe",
       "preLaunchTask": "dagger do build",
     },
   ]

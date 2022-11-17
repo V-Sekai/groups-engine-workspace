@@ -8,18 +8,26 @@
       "type": "shell",
       "command": "dagger project init",
       "options": {
-        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
+        "cwd": "${workspaceFolder}/.github/dagger"
       },
       "problemMatcher": [],
-      "group": "build"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": [
+      ],
     },
     {
       "label": "dagger project update",
       "type": "shell",
       "command": "dagger project update",
       "options": {
-        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
+        "cwd": "${workspaceFolder}/.github/dagger"
       },
+      "dependsOn": [
+        "dagger project init",
+      ],
       "problemMatcher": [],
       "group": "build"
     },
@@ -28,11 +36,13 @@
       "type": "shell",
       "command": "dagger do build  --cache-to type=local,mode=max,dest=../../../storage --cache-from type=local,mode=max,src=../../../storage",
       "options": {
-        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
+        "cwd": "${workspaceFolder}/.github/dagger"
       },
-      "dependsOn": ["dagger project init", "dagger project update"],
+      "dependsOn": [
+        "dagger project update"
+      ],
       "problemMatcher": [],
       "group": "build"
-    },
+    }
   ]
 }

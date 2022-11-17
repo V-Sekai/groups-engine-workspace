@@ -6,3 +6,7 @@
 *.srctrlprj
 
 storage/
+
+.github/dagger/cue.mod/
+
+.github/dagger/.dagger_storage/
