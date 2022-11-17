@@ -4,57 +4,35 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Mac",
+      "label": "dagger project init",
       "type": "shell",
-      "command": "scons bits=64 compiledb=yes test=yes deprecated=no platform=osx dev_build=yes bits=64 target=editor custom_modules=../godot-modules-groups",
+      "command": "dagger project init",
       "options": {
-        "cwd": "${workspaceFolder}/godot"
+        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
       },
       "problemMatcher": [],
       "group": "build"
     },
     {
-      "label": "Windows",
+      "label": "dagger project update",
       "type": "shell",
-      "command": "scons target=editor werror=no optimize=speed_trace bits=64 compiledb=yes warning=no test=yes debug_symbols=no platform=windows dev_build=yes bits=64 use_mingw=yes use_llvm=yes use_thinlto=no warnings=no  LINKFLAGS='-Wl,-pdb=' CCFLAGS='-g -gcodeview' debug_symbols=no custom_modules=../godot-modules-groups",
+      "command": "dagger project update",
       "options": {
-        "cwd": "${workspaceFolder}/godot"
+        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": "build"
     },
     {
-      "label": "Windows MSVC",
+      "label": "dagger do build",
       "type": "shell",
-      "command": "scons target=editor bits=64 optimize=speed_trace compiledb=yes warning=no test=yes deprecated=no platform=windows dev_build=yes bits=64 custom_modules=../godot-modules-groups",
+      "command": "dagger do build  --cache-to type=local,mode=max,dest=../../../storage --cache-from type=local,mode=max,src=../../../storage",
       "options": {
-        "cwd": "${workspaceFolder}/godot"
+        "cwd": "${workspaceFolder}/v-sekai-game/.github/dagger"
       },
-      "group": "build",
-      "problemMatcher": []
+      "dependsOn": ["dagger project init", "dagger project update"],
+      "problemMatcher": [],
+      "group": "build"
     },
-    {
-      "label": "Linux",
-      "type": "shell",
-      "command": "scons target=editor bits=64 optimize=speed use_static_cpp=no use_llvm=yes compiledb=yes LINKFLAGS=-L/opt/rh/gcc-toolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/ test=yes platform=linuxbsd dev_build=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "group": "build",
-      "problemMatcher": []
-    },
-    {
-      "label": "Web",
-      "type": "shell",
-      "command": "scons target=editor platform=web compiledb=yes warnings=no test=yes custom_modules=../godot-modules-groups",
-      "options": {
-        "cwd": "${workspaceFolder}/godot"
-      },
-      "group": "build",
-      "problemMatcher": []
-    }
   ]
 }

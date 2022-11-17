@@ -5,40 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch editor Windows",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
-      "preLaunchTask": "Windows MSVC",
-    },
-    {
       "name": "Launch editor IK Windows",
       "type": "cppvsdbg",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "args": ["--path", "godot-modules-groups/ewbik/demo", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.windows.editor.dev.x86_64.llvm.exe",
-      "preLaunchTask": "Windows",
-    },
-    {
-      "name": "Launch editor Linux",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.linuxbsd.editor.x86_64.llvm",
-      "preLaunchTask": "Linux",
-    },
-    {
-      "name": "Launch editor Mac",
-      "type": "lldb",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "args": ["--path", "v-sekai-game", "-e"],
-      "program": "${workspaceFolder}/godot/bin/godot.osx.editor.tools.64",
-      "preLaunchTask": "Mac",
+      "program": "${workspaceFolder}/v-sekai-game/build/windows_release_x86_64.exe",
+      "preLaunchTask": "dagger do build",
     },
   ]
 }
